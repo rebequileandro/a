@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+  font-family: var(--font-poppins);
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+* {
+  scrollbar-width: 0;
+  scrollbar-color: #ffffff00 #ffffff00;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+}

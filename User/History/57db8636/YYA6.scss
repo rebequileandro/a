@@ -1,0 +1,19 @@
+@import '../../../sass/stylesImports.scss';
+.my-activities {
+  position: relative;
+  margin-top: 2rem;
+  min-height: 100%;
+  &__loading-anim {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__container-activities {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3.7rem 0;
+    gap: 1rem;
+  }
+}

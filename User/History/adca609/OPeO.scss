@@ -1,0 +1,29 @@
+@use "../../sass/stylesImports.scss" as styles;
+.nav {
+  @include styles.flex(row, nowrap, start, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  gap: 2rem;
+  padding: 0.7rem 0rem;
+  // background-color: styles.$color-secondary;
+  background: linear-gradient(
+    180deg,
+    styles.$color-secondary 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 9;
+  &__link {
+    font-size: styles.$text-size-9;
+    font-weight: 600;
+    &--active {
+      color: styles.$color-tertiary;
+    }
+  }
+  &__logo {
+    height: 100%;
+    margin: 0rem 2rem;
+  }
+}

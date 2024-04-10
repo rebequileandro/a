@@ -1,0 +1,11 @@
+@import '@/scss/index.scss';
+
+.landing {
+  @include limits(100vw, 100vh);
+  animation: landing 1s ease 1 2.5s forwards;
+  background: linear-gradient(180deg, #000000 0%, #000610 80%);
+  &__icon {
+    @include absolute-center;
+    animation: fade-out 3s 1 4s forwards;
+  }
+}

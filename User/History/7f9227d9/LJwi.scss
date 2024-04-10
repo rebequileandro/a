@@ -1,0 +1,19 @@
+.container-qr-reader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-top: 6rem;
+    width: 100vw;
+    overflow: hidden;
+    transform: translateY(100%);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    button{
+        position: absolute;
+        color: white;
+        z-index: 4;
+        top: 30%;
+        left: 90%;
+    }
+}

@@ -1,0 +1,117 @@
+.calendar-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .calendar-container{
+        width: 90%;
+        height: 26.25rem;
+        border-radius: 1.5rem;
+        background: var(--gradient-secondary);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: scale(0);
+        animation: show 0.2s 1 forwards;
+    }
+    .accept{
+        width: 50%;
+        height: 2.5rem;
+        background: var(--gradient-primary);
+        color: white;
+        border-radius: 6.25rem;
+    }
+    .calendar-wrapper{
+        background-image: url('../../assets/icons/Organizer/fondo_calendario.svg');
+        width: 18.56rem;
+        height: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 1.5rem;
+        padding: 1px;
+        position: relative;
+    }
+    .next{
+        img{
+            width: .7rem;
+        }
+        &.left{
+            transform: rotate(180deg);
+        }
+    }
+    
+    .rmdp-wrapper{
+        background-color: transparent;
+    }
+    .rmdp-shadow {
+        box-shadow: none;
+    }
+    .rmdp-header-values {
+        color: white;
+        span{
+            font-family: 'Rajdhani';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+    .rmdp-header {
+        margin-top: auto;
+    }    
+    .rmdp-arrow{
+        position: absolute;
+    }
+    .rmdp-week-day{
+        color: white;
+    }
+    .rmdp-day span{
+        color: white;
+        font-family: 'Rajdhani';
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .rmdp-range{
+        background: #B35482;
+        box-shadow: none;
+    }
+    .rmdp-range.start{
+        background-image: url('../../assets/icons/Organizer/range_selected.svg');
+        background-size: cover;
+    }
+    .rmdp-range.end{
+        background-image: url('../../assets/icons/Organizer/range_selected.svg');
+        background-size: cover;
+    }
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+        background: #ca428100;
+    }
+    .rmdp-day.rmdp-today span {
+        background: #ac6688;
+    }
+    .rmdp-month-picker, .rmdp-year-picker {
+        background: rgba(50, 50, 50, 0.62);
+        backdrop-filter: blur(2rem);
+        border-radius: 1rem;
+
+    }
+    .rmdp-day.rmdp-selected span:not(.highlight) {
+        background: var(--gradient-primary);
+        box-shadow: 0 0 3px #975799;
+        color: #fff;
+        overflow: hidden;
+    }
+    .rmdp-week{
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 1px;
+    }
+}

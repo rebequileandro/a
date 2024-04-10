@@ -1,0 +1,33 @@
+@use "../../sass/stylesImports" as styles;
+
+.bzrp-tour {
+  width: 100%;
+  padding: 5rem;
+  padding-top: 8rem;
+
+  @include styles.flex-config(flex, center, center, column, nowrap);
+  &__btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+    width: 12rem;
+    backdrop-filter: blur(1rem);
+  }
+  &__no-dates {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff91;
+    font-family: teko;
+  }
+}
+@media (max-width: 600px) {
+  .bzrp-tour {
+    padding: 2.5rem;
+    padding-top: 7.5rem;
+    &__btn {
+      height: 3.5rem;
+      width: 15rem;
+      font-size: 2rem;
+    }
+  }
+}

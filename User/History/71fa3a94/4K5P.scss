@@ -1,0 +1,9 @@
+@import '../../../sass/stylesImports.scss';
+
+.linked-accounts {
+  &__items-container {
+    @include grey-gradient-bg;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+}

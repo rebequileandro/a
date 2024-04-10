@@ -1,0 +1,94 @@
+@import '../../global/css/mixins.scss';
+.wedrink-container{
+    width: 100%;
+    background: var(--color-background);
+    .with-wedrink{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        h1{
+            font-weight: 700;
+            font-size: 5rem;
+            text-align: center;
+            @include responsive(992px){ 
+                font-size: 3rem;
+                width: 80%;
+            } 
+        }
+        .ellipse.one{
+            left: -4%;
+            @include responsive(992px){
+                width: 9.75rem;
+                height: 9.75rem;
+                top: 20%;
+                left: 15%
+            }
+        }
+        .ellipse.two{
+            width: 4.4rem;
+            height: 4.4rem;
+            top: 35%;
+            left: 8%;
+            @include responsive(1600px){ 
+                left: 15%
+            }
+            @include responsive(992px){ 
+                width: 3.25rem;
+                height: 3.25rem;
+                left: auto;
+                top: 30%;
+                right: 20%
+            }
+        }
+        .ellipse.three{
+            width: 3rem;
+            height: 3rem;
+            left: 15%;
+            @include responsive(992px){ 
+                width: 2.25rem;
+                height: 2.25rem;
+                left: auto;
+                top: 40%;
+                right:10%
+            }
+        }
+        .ellipse-pink.one{
+            right: 25%;
+            @include responsive(992px){
+                width: 9.75rem;
+                height: 9.75rem;
+                bottom: 20%;
+                right: 15%
+            }
+        }
+        .ellipse-pink.two{
+            width: 4.4rem;
+            height: 4.4rem;
+            right: 17%;
+            @include responsive(992px){ 
+                width: 3.25rem;
+                height: 3.25rem;
+                left: auto;
+                bottom: 30%;
+                left: 20%
+            }
+        }
+        .ellipse-pink.three{
+            width: 3rem;
+            height: 3rem;
+            right: 10%;
+            top: 40%;
+            @include responsive(992px){ 
+                width: 2.25rem;
+                height: 2.25rem;
+                top: auto;
+                bottom: 30%;
+                left:-1%
+            }
+        }
+    }
+}

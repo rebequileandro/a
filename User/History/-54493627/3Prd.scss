@@ -1,0 +1,27 @@
+.container-edit-barmans{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    animation:  _transition 0.4s 1 forwards;
+    z-index: 4;
+    background: var(--color-background);
+
+
+
+    .backbutton-notifications{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        height: 1.78rem;
+        margin-bottom: 1rem;
+        img{
+            cursor: pointer;
+        }
+
+}

@@ -1,0 +1,19 @@
+#new-line{
+    input{
+        width: 85%;
+        background: rgba(0, 0, 0, 0.028);
+        border-radius: .5em;
+    }
+    .save{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button{
+            width: 5em;
+            height: 1.93em;
+            border: none;
+            color: var(--color-secondary);
+        }
+    }
+}

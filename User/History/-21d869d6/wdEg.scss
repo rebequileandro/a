@@ -1,0 +1,54 @@
+.popup-overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(14, 13, 13, 0.7);
+    backdrop-filter: blur(1rem);
+    z-index: 2;
+    .popup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16rem;
+        width: 18.75rem;
+        height: 12rem;
+        background: var(--gradient-secondary);
+        border-radius: 1rem;
+        transform: scale(0.2);
+        animation: popup-in 0.2s 1 forwards;
+        z-index: 2;
+    }
+    img{
+        width: 3rem;
+    }
+    button{
+        background: var(--gradient-primary-left-to-right);
+        width: 13.4rem;
+        height: 2.7rem;
+        box-shadow: 0rem 0rem 1.25rem rgba(255, 84, 123, 0.5);
+        border-radius: 6.25rem;
+        text-transform: capitalize;
+        color: white;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 0.87rem;
+    }
+    p{
+        font-family: 'Acumin Pro Wide';
+        font-weight: 400;
+        font-size: 0.68rem;
+    }
+    .description{
+        background-color: red;
+        max-width: 11rem;
+    }
+    @keyframes popup-in {
+        to{
+            transform: scale(1);
+        }
+    }
+}

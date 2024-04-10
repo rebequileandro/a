@@ -1,0 +1,31 @@
+@use "../../sass/stylesImports.scss" as styles;
+
+.home {
+  border: solid 1px aqua;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  @include styles.flex(column, nowrap, center, center);
+
+  &__title {
+    text-align: center;
+    font-size: styles.$heading-size-24;
+  }
+  &__description {
+    text-align: center;
+    font-size: styles.$text-size-10;
+  }
+  //misceláneas
+  &__double-ring {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+  }
+  &__show-control {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+}

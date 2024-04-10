@@ -1,0 +1,65 @@
+@import "../../global/css/mixins.scss";
+.navbar-container {
+  height: 5.42rem;
+  width: 95%;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px 4px 45px #000000,
+    inset 0px 4px 45px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  z-index: 5;
+  top: 1.5rem;
+  border-radius: 1.25rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  @include flexible(flex, row, nowrap, space-between, center);
+  @include responsive(870px) {
+    display: none;
+  }
+  // @include responsive(992px){
+  //     top: auto;
+  //     bottom: 0%;
+  //     background: rgba(149, 34, 178, 0.61);
+  //     backdrop-filter: blur(55px);
+  //     width: 100%;
+  //     border-radius: 0;
+  // }
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    a {
+      padding: 0 10px 0 10px;
+      font-family: "Rajdhani";
+      font-weight: 600;
+      font-size: 1.12rem;
+      text-decoration: none;
+      color: white;
+      transition: all 0.7s;
+      &:hover {
+        transform: translateY(5px);
+      }
+    }
+  }
+  &__btn {
+    width: 16.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation.mobile {
+    display: none;
+    @include responsive(992px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  @include responsive(870px) {
+    .navigation.desktop,
+    .btn,
+    .logo-nav {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.loader-wrapper {
+    &__loader {
+      animation: rotate 0.7s infinite linear;
+    }
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }

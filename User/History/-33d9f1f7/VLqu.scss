@@ -1,0 +1,51 @@
+@import "../../sass/stylesImports.scss";
+
+.next-dates {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &__image-one {
+    width: 30rem;
+    position: absolute;
+    left: -10rem;
+    transform: rotate(-30deg) translateX(-50%) translateY(-50%);
+    animation: translate-0-0-0deg 1.5s 1s 1 forwards;
+  }
+  &__dates-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 5rem;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    z-index: 2;
+    span {
+      @include primary-gradient-txt;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .next-dates {
+    &__image-one {
+      width: 40rem;
+      position: absolute;
+      left: -10rem;
+      bottom: 4rem;
+      transform: rotate(-30deg) translateX(-70%) translateY(-50%);
+      animation: translate-0-0-0deg 1.5s 1s 1 forwards;
+    }
+    &__dates-container {
+      width: 90%;
+    }
+  }
+}

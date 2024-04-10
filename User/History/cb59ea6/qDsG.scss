@@ -1,0 +1,173 @@
+@import "../../global/css/mixins.scss";
+
+.menu-container {
+  height: 100vh;
+  width: 100%;
+  @include flexible(flex, row, nowrap, center, center);
+  @include responsive(900px) {
+    margin-top: 7rem;
+    height: 100%;
+  }
+  &__title {
+    font-family: "Monument Extended";
+    font-weight: 700;
+    font-size: 2.6rem;
+    @include responsive(992px) {
+      font-size: 2rem;
+    }
+  }
+  &__description {
+    font-family: "Acumin Pro Wide";
+    font-size: 1.4rem;
+    @include responsive(1200px) {
+      font-size: 1rem;
+    }
+  }
+  .content {
+    width: 80%;
+    height: 100%;
+    @include flexible(flex, row, nowrap, space-between, center);
+    @include responsive(900px) {
+      @include flexible(flex, column-reverse, nowrap, space-evenly, center);
+      height: 72rem;
+    }
+  }
+  .content-left {
+    @include flexible(flex, column, nowrap, center, start);
+    gap: 1rem;
+    @include responsive(900px) {
+      width: 100%;
+    }
+
+    // h1 {
+    //   font-size: 3.8rem;
+    //   @include responsive(1160px) {
+    //     font-size: 2.5rem;
+    //   }
+    //   @include responsive(900px) {
+    //     font-size: 2rem;
+    //   }
+    // }
+    // p {
+    //   font-size: 1.4rem;
+    //   @include responsive(1160px) {
+    //     font-size: 1.2rem;
+    //     width: 90%;
+    //   }
+    //   @include responsive(900px) {
+    //     font-size: 1.125rem;
+    //     width: 80%;
+    //   }
+    //   @include responsive(900px) {
+    //     width: 90%;
+    //   }
+    // }
+  }
+  ul {
+    list-style: none;
+  }
+  .item {
+    font-family: "Acumin Pro Wide";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    @include responsive(1200px) {
+      font-size: 1rem;
+    }
+  }
+  .item.one::before {
+    display: inline-block;
+    content: url("../../../assets/icons/icon_pos.svg");
+    margin-left: -3px;
+    width: 1.6rem;
+  }
+  .item.two::before {
+    display: inline-block;
+    content: url("../../../assets/icons/icon_phone.svg");
+    width: 1.5rem;
+  }
+  .item.three::before {
+    display: inline-block;
+    content: url("../../../assets/icons/icon_conection.svg");
+    width: 1.5rem;
+  }
+  .item.four::before {
+    display: inline-block;
+    content: url("../../../assets/icons/icon_touch.svg");
+    width: 1.5rem;
+  }
+  .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__image01 {
+      width: 14rem;
+      position: absolute;
+      right: 0;
+    }
+    &__image02 {
+      width: 16rem;
+    }
+  }
+  .image-stats {
+    width: 27rem;
+    @include responsive(1150px) {
+      width: 21.375rem;
+    }
+    @include responsive(1150px) {
+      width: 19rem;
+    }
+    @include responsive(900px) {
+      width: 18.375rem;
+    }
+  }
+  .ellipse.one {
+    top: -15%;
+    right: -35%;
+    @include responsive(992px) {
+      top: 10%;
+      width: 9rem;
+      right: 20%;
+      height: 9rem;
+    }
+  }
+  .ellipse.two {
+    top: 35%;
+    right: -50%;
+    width: 4.4rem;
+    height: 4.4rem;
+    @include responsive(992px) {
+      top: auto;
+      right: 10%;
+      bottom: 90%;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .ellipse-pink.one {
+    bottom: 10%;
+    left: -30%;
+    @include responsive(992px) {
+      bottom: 5%;
+      left: -10%;
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+  .ellipse-pink.two {
+    top: 30%;
+    left: -40%;
+    width: 4.4rem;
+    height: 4.4rem;
+    @include responsive(992px) {
+      display: none;
+    }
+  }
+  &__btn {
+    width: 16.5rem;
+    @include responsive(992px) {
+      width: 95%;
+    }
+  }
+}

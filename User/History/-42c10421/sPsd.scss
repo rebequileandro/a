@@ -1,0 +1,98 @@
+@import '../../../global/css/mixins.scss';
+
+.chash-handing-container{
+    height: 100vh;
+    width: 100%;
+    @include flexible(flex, row, nowrap, center, center);
+
+    .content{
+        width: 80%;
+        @include flexible(flex, row, nowrap, space-between, center);
+        @include responsive(992px){
+            flex-direction: column-reverse;
+            gap: 4rem;
+        }
+
+    }
+    .content-left{
+        @include flexible(flex, column, nowrap, center, start);
+        gap: 1rem;
+        h1{
+        font-size: 3.8rem;
+            @include responsive(992px){
+                font-size: 2rem
+            }   
+        }
+        p{
+        font-size: 1.4rem;
+            @include responsive(992px){
+                font-size: 1.1rem
+            }   
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    .item{
+        font-family: 'Acumin Pro Wide';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        margin-bottom: .5rem;
+        @include responsive(992px){
+            font-size: 1.1rem
+        }   
+    }
+    .item.one::before{
+        display: inline-block;
+        content: url("../../../assets/icons/icon_pos.svg");
+        margin-right: 0.5rem;
+    }
+    .item.two::before{
+        display: inline-block;
+        content: url("../../../assets/icons/icon_phone.svg");
+        margin-right: 0.5rem;
+    }
+    .item.three::before{
+        display: inline-block;
+        content: url("../../../assets/icons/icon_conection.svg");
+        margin-right: 0.5rem;
+    }
+    .item.four::before{
+        display: inline-block;
+        content: url("../../../assets/icons/icon_camera.svg");
+        margin-right: 0.5rem;
+    }
+    .btn{
+        width: 13.5rem;
+        height: 2.5rem;
+        @include responsive(992px){
+            width: 95%;
+        }
+    }
+    .image-pos{
+        width: 40rem;
+        @include responsive(992px){
+            width: 20.4rem
+        }
+    }
+    .image-container{
+        position: relative;
+    }
+    .ellipse.one{
+        width: 4.4rem;
+        height: 4.4rem;
+        top: -30%;
+        right: 30%;
+    }
+    .ellipse-pink.one{
+        top: -30%;
+        left: -2%;
+    }
+    .ellipse-pink.two{
+        width: 6.4rem;
+        height: 6.4rem;
+        bottom: -30%;
+        left: -2%;
+    }
+}

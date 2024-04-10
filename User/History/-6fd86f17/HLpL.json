@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "65150e727856889seb607dc61",
+    "city": "MEDELLIN",
+    "country": "COLOMBIA",
+    "flag": "🇨🇴",
+    "date": "2024-02-16T00:00:00.000Z",
+    "show": "La Solar Festival ",
+    "availability": true,
+    "link": "https://www.enterticket.es/eventos/boombastic-alicante-314488",
+    "__v": 0
+  },
+  {
+    "_id": "65150eba7856889aeb607dc66",
+    "city": "MIAMI",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-02-18T00:00:00.000Z",
+    "show": "Vibra Festival",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150eba7856889eb6s07dc66",
+    "city": "CALIFORNIA",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-04-12T00:00:00.000Z",
+    "show": "Coachella",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150eba7856889eb6s07dc66",
+    "city": "CALIFORNIA",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-04-19T00:00:00.000Z",
+    "show": "Coachella",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150e2ba7856889qseb607dc66",
+    "city": "",
+    "country": "PUERTO RICO",
+    "flag": "🇵🇷",
+    "date": "2024-04-28T00:00:00.000Z",
+    "show": "Coca Cola Music Hall",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150e2ba2f7856889qseb607dc66",
+    "city": "CDMX",
+    "country": "MÉXICO",
+    "flag": "🇲🇽",
+    "date": "2024-05-18T00:00:00.000Z",
+    "show": "Hipódromo de las Américas",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150seba7856889es0vkb6s07dc66",
+    "city": "NUEVA YORK",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-05-22T00:00:00.000Z",
+    "show": "Terminal 5",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150seba78asa56889es0vkb6s07dc66",
+    "city": "CHICAGO",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-05-25T00:00:00.000Z",
+    "show": "Sueños Chicago",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150sebaaaa78asa56889es0vkb6s07dc66",
+    "city": "MADRID",
+    "country": "ESPAÑA",
+    "flag": "🇪🇸",
+    "date": "2024-10-05T00:00:00.000Z",
+    "show": "IFEMA",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  },
+  {
+    "_id": "65150a26889es0vkb6s07dc66",
+    "city": "BARCELONA",
+    "country": "ESPAÑA",
+    "flag": "🇪🇸",
+    "date": "2024-10-11T00:00:00.000Z",
+    "show": "Parc del Forum",
+    "availability": true,
+    "link": "https://www.heinekensilverliveout.com/",
+    "__v": 0
+  }
+]

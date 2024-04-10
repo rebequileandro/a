@@ -1,0 +1,33 @@
+{
+  "paymentOwner": "cashier",
+  "idUser": "63346e67659b8f1f0688969f",
+  "token": "67369c3f92620fa7522875911fe21002",
+  "paymentId": "master",
+  "issuerId": "3",
+  "nameClientePayment": "paulo londra",
+  "phoneClientPayment": [{ "prefix": "54", "number": "2131232133212" }],
+  "idCashier": "63346e67659b8f1f0688969f",
+  "idOrganizerPayment": "6322eb91034b3a5b276623be",
+  "namePartyPayment": "Vorterix",
+  "idParty": "63346e67659b8f1f06889699",
+  "nameBarra": "barra1",
+  "total": "750",
+  "paymentMethod": "creditCard",
+  "name": "paulo londra",
+  "dni": "41234235",
+  "accessTokenMercadopago": "TEST-5962951926255028-092606-949b6c3fb1cd848126f47b88f13a73c7-567838662",
+  "totalMinOrder": 1,
+  "orderPayment": [
+    {
+      "imageDrink": [
+        "https://s3.sa-east-1.amazonaws.com/wedrink.drink/beer.png"
+      ],
+      "typeDrink": "drink",
+      "title": "schneider",
+      "unit_price": "750",
+      "quantity": 1,
+      "recipe": [{ "botella": "schneider", "cantidad": 473 }]
+    }
+  ],
+  "imageBarra": "barra1"
+}

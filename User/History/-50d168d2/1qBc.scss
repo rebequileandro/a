@@ -1,0 +1,68 @@
+// MEDIA QUERY MANAGER
+
+/* 
+[0 - 600px]:       Phone
+600 - 900px:     Tablet portrait
+900 - 1200px:    Tablet landscape
+1200 - 1800:   Average Desktop
+1800px +:        Big desktop
+*/
+// 1em = 16px
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 37.5em) {
+      //600-900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //900-1200px
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    //1200-1800px
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+}
+//DISPLAY FLEX
+@mixin flex($direction, $corte, $just, $align) {
+  display: flex;
+  flex-flow: $direction $corte;
+  justify-content: $just;
+  align-items: $align;
+}
+
+// CENTERED ABSOLUTE POSITION
+/*Mainly for popups*/
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin scroll-bar {
+  scrollbar-width: auto;
+  scrollbar-color: #ffffff #ffffff;
+
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    display: block;
+    width: 7px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff1a;
+    height: 90%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #90ff8c -0.06%, #63fff6 100%);
+    border-radius: 13px;
+  }
+}

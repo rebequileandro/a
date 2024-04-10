@@ -1,0 +1,35 @@
+import { AnimatePresence, motion} from 'framer-motion'
+import React, { useState } from 'react'
+import InputDiv from '../../../components/InputDiv/InputDiv'
+import './NewPassword.scss'
+const NewPassword = () => {
+    const [input, setInput] = useState('')
+    const handleSubmit = () => {
+
+    }
+  return (
+    <div className='new-password-container'>
+        <AnimatePresence>
+            <motion.div
+             initial={{opacity: 0}}
+             className='gradient-box'>
+                <h2 className='title'>Elige una contraseña</h2>
+                <form className='form-container'>
+                <InputDiv
+                        inputProps={{
+                            name: "n",
+                            type: "password",
+                            placeholder: "",
+                            value: input
+                        }}
+                        setState={setInput}
+                    />
+                    <button className='btn btn--primary'>Aceptar</button>
+                </form>
+            </motion.div>
+        </AnimatePresence>
+    </div>
+  )
+}
+
+export default NewPassword

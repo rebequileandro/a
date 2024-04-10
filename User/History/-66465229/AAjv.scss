@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&display=swap');
+:root{
+    //fonts
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/*|---------------| App Color Schema|---------------*/
+$BLUE: #00376C;
+$PINK: #B51942;
+$GRAY: #707070;
+
+/*|---------------| BREAKPOINTS|---------------*/
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";

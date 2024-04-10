@@ -1,0 +1,80 @@
+[
+  {
+    "slide": [
+      {
+        "label": "Usuario:",
+        "inputProps": {
+          "type": "text",
+          "name": "user"
+        }
+      },
+      {
+        "label": "Contraseña:",
+        "inputProps": {
+          "type": "password",
+          "name": "password"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Registrarse:",
+
+    "slide": [
+      {
+        "label": "Nombre completo:",
+        "inputProps": {
+          "type": "text",
+          "name": "name"
+        }
+      },
+      {
+        "label": "Matricula:",
+        "inputProps": {
+          "type": "text",
+          "name": "registration"
+        }
+      },
+      {
+        "label": "Especialidad:",
+        "inputProps": {
+          "type": "text",
+          "name": "specialty"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Registrarse:",
+    "slide": [
+      {
+        "label": "Telefono:",
+        "inputProps": {
+          "type": "text",
+          "name": "phone"
+        }
+      },
+      {
+        "label": "Mail:",
+        "inputProps": {
+          "type": "text",
+          "name": "email"
+        }
+      },
+      {
+        "label": "Contraseña:",
+        "inputProps": {
+          "type": "password",
+          "name": "password"
+        }
+      },
+      {
+        "label": "Repetir contraseña:",
+        "inputProps": {
+          "type": "password",
+          "name": "repeatPassword"
+        }
+      }
+    ]
+  }
+]

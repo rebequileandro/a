@@ -1,0 +1,25 @@
+@import '../../../sass/main.scss';
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &____image {
+    width: 13rem;
+  }
+  &__title {
+    width: 23.3rem;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: $heading-size-20;
+    text-transform: none;
+    text-align: center;
+  }
+  &__text {
+    width: 20.8rem;
+    font-family: 'Rajdhani';
+    font-weight: 300;
+    font-size: $heading-size-20;
+    text-align: center;
+  }
+}

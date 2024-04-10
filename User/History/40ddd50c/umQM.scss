@@ -1,0 +1,153 @@
+@import '@/scss/index.scss';
+
+.projectcard {
+  &__image {
+    font-family: $FONT-POPPINS;
+    position: relative;
+    overflow: hidden;
+    width: 35rem;
+    height: 20rem;
+    box-shadow: -5rem 2rem 10rem 0.1rem #00ccff65,
+      3rem -3rem 2rem 0.1rem #0e4eff5b;
+    margin: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+    transition: all 1s;
+    &:hover {
+      box-shadow: -5rem 6rem 10rem 0.1rem #00ccff,
+        10rem -5rem 10rem 0.1rem #0e4eff;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      backface-visibility: hidden;
+      vertical-align: top;
+      opacity: 0.9;
+    }
+  }
+  &__image *,
+  &__image *:before,
+  &__image *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+  }
+
+  &__image .title {
+    position: absolute;
+    top: 50%;
+    left: 2.5rem;
+    padding: 10px 15px 15px;
+  }
+  &__image .title:before,
+  &__image .title:after {
+    height: 0.2rem;
+    width: 40rem;
+    position: absolute;
+    content: '';
+    @include gradien;
+  }
+  &__image .title:before {
+    top: 0;
+    left: 10px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  &__image .title:after {
+    bottom: 0;
+    right: 10px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  &__image .title div:before,
+  &__image .title div:after {
+    width: 0.2rem;
+    height: 300rem;
+    position: absolute;
+    content: '';
+    @include gradien;
+  }
+  &__image .title div:before {
+    top: 10px;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  &__image .title div:after {
+    bottom: 10px;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  &__image h2,
+  &__image h4 {
+    margin: 0;
+    text-align: start;
+  }
+  &__image h2 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  &__image h4 {
+    display: block;
+    font-weight: 700;
+    @include gradien-text;
+    text-shadow: 0px 0px 1rem #00ccff;
+  }
+  &__image figcaption {
+    position: absolute;
+    bottom: 53%;
+    left: 3.2rem;
+    text-align: left;
+    opacity: 0;
+    padding: 5px 60px 5px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  &__image figcaption p {
+    margin: 0;
+  }
+  &__image a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__image:hover img,
+  &__image.hover img {
+    zoom: 1;
+    filter: alpha(opacity=35);
+    -webkit-opacity: 0.35;
+    opacity: 0.35;
+  }
+  &__image:hover .title:before,
+  &__image.hover .title:before,
+  &__image:hover .title:after,
+  &__image.hover .title:after,
+  &__image:hover .title div:before,
+  &__image.hover .title div:before,
+  &__image:hover .title div:after,
+  &__image.hover .title div:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  &__image:hover .title:before,
+  &__image.hover .title:before,
+  &__image:hover .title:after,
+  &__image.hover .title:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  &__image:hover figcaption,
+  &__image.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+}

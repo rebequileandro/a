@@ -1,0 +1,10 @@
+.not-found {
+  @include absolute-center;
+  &__animation {
+    width: 75vw;
+  }
+  &__text {
+    @include absolute-center;
+    top: 30%;
+  }
+}

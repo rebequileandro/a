@@ -1,0 +1,63 @@
+//PARTY USER LAYOUTS
+.layout {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10rem;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  &__pizza-top {
+    width: 25rem;
+    position: absolute;
+    top: 1rem;
+    right: -20%;
+  }
+  &__pizza-bottom {
+    width: 40rem;
+    position: absolute;
+    bottom: 1rem;
+    left: -40%;
+  }
+  &__data {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  &__data-list {
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    font-size: 2.5rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__description {
+    font-size: 1.5rem;
+  }
+  &__image-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    &--right {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.chat-message-container {
+  &__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 100%;
+    padding: 0.2rem;
+    overflow: hidden;
+    &--user {
+      background: #6001f2;
+    }
+    &--ai {
+      background: #9747ff;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #dfc3f0;
+        border-radius: 100%;
+      }
+    }
+  }
+  &__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  .chat-message {
+    background: #fff;
+    color: #000;
+  }
+}

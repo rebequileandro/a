@@ -1,0 +1,19 @@
+.container-header-barman{
+    margin-top: 4.5rem;
+    h1{
+        text-transform: none;
+        Font-family: 'Acumin Pro Wide';
+        Font-style: Bold;
+        Font-size: 24px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        justify-content: center;
+    }
+    p{
+        margin-top: 1rem;
+        text-transform: capitalize;
+    }
+}

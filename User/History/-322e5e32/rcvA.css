@@ -1,0 +1,13 @@
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+#map {
+  width: 90vw;
+  height: 90vh;
+  background-color: blueviolet;
+}

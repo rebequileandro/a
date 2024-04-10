@@ -1,0 +1,6 @@
+@import '../../global/css/mixins.scss';
+.wedrink-work-container{
+    width: 100%;
+    @include flexible(flex, column, nowrap, center, center);
+    background: var(--color-background)
+}

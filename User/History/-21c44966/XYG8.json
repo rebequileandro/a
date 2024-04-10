@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "inputLabel": "Número de tarjeta:",
+      "inputPlaceholder": "Sin Espacios",
+      "inputName": "number"
+    }
+  ],
+  [
+    {
+      "inputLabel": "Nombre y apellido:",
+      "inputPlaceholder": "Nombre completo",
+      "inputName": "number"
+    },
+    {
+      "inputLabel": "Número de documento:",
+      "inputPlaceholder": "Sin puntos",
+      "inputName": "number"
+    }
+  ]
+]

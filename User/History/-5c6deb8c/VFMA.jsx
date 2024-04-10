@@ -1,0 +1,22 @@
+import React from "react";
+import "./mdcx.scss";
+import { MDCxIcon } from "../SVG";
+import { useSelector } from "react-redux";
+import { currentUser } from "@/store/slice/user.slice";
+
+const Mdcx = () => {
+  //   const user = useSelector(currentUser);
+  const user = {
+    mdcx: "00000,100",
+  };
+  return (
+    <div className="mdcx-container">
+      <MDCxIcon />
+      <span className="mdcx-quantity heading-primary heading-primary--main">
+        {user.mdcx}
+      </span>
+    </div>
+  );
+};
+
+export default Mdcx;

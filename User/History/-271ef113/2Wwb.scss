@@ -1,0 +1,15 @@
+.bzrp-tour-item {
+  height: 4rem;
+  width: 50%;
+  &__underline {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+  }
+}

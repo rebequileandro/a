@@ -1,0 +1,28 @@
+.landing{
+    @include center;
+    background-color: $PRIMARY-COLOR;
+    width: 100vw;
+    height: 100vh;
+    animation: landing 1s ease 1 3s forwards;
+    color: $SECONDARY-COLOR;
+}
+.logo{
+    @include center;
+    @include limits(5em, 5em);
+    font-size: 3em;
+    border: solid $SECONDARY-COLOR 2px;
+    border-radius: 1em;
+    animation: logo 1s ease 1 3s forwards;
+}
+
+@keyframes logo {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes landing {
+    to{
+        background-color: transparent;
+    }
+}

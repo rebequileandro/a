@@ -1,0 +1,65 @@
+.payment-method-card {
+  margin-top: 2rem;
+  width: 100%;
+  height: 19rem;
+  &__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  &:hover &__inner {
+    transform: perspective(50rem) rotateY(180deg);
+  }
+  &__logo {
+    width: 4rem;
+  }
+  &__data {
+    font-weight: 400;
+    font-size: 1.8rem;
+    &--venc {
+      position: absolute;
+      right: 3rem;
+    }
+    &--code {
+      color: black;
+    }
+  }
+  &__front-card,
+  &__back-card {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #2a2c30 0%, rgb(42, 44, 48) 100%);
+    position: absolute;
+    border-radius: 1rem;
+    display: flex;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  &__front-card {
+    flex-direction: column;
+    gap: 1.3rem;
+    transform: perspective(50rem) rotateY(0deg);
+  }
+  &__back-card {
+    transform: perspective(50rem) rotateY(180deg);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__white-line {
+    height: 3.4rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,106 @@
+.input-wrapper-xnodui {
+  --radius-input: 1.2em;
+  --input-border-color: #d9d9d9c5;
+  --input-border-color-active: #ffffff;
+  --input-text-color: #ffffff;
+  --input-font: "Roboto", sans-serif;
+  --input-background-color: #ffffff00;
+
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  border: solid 2px var(--input-border-color);
+  border-radius: var(--radius-input);
+  background-color: var(--input-background-color);
+  transition: border 0.5s;
+  padding: 0.5em 0.8em;
+  position: relative;
+}
+.input-wrapper-xnodui--full-width {
+  width: 100%;
+}
+.input-wrapper-xnodui--s {
+  font-size: 10px;
+}
+.input-wrapper-xnodui--m {
+  font-size: 16px;
+}
+.input-wrapper-xnodui--l {
+  font-size: 20px;
+}
+.input-xnodui {
+  // border: solid 2px var(--input-border-color);
+  border: none;
+  // border-radius: var(--radius-input);
+  // padding: 0.7em 0.8em;
+  background-color: var(--input-background-color);
+  font-size: 1em;
+  font-family: var(--input-font);
+  color: var(--input-text-color);
+}
+.input-xnodui--full-width {
+  width: 100%;
+}
+.input-wrapper-xnodui:hover {
+  border: solid 2px var(--input-border-color-active);
+}
+.input-xnodui:focus {
+  outline: none;
+}
+.input-wrapper-xnodui:focus-within {
+  border: solid 2px var(--input-border-color-active);
+  .input-xnodui-password-btn-icon {
+    stroke: var(--input-border-color-active);
+  }
+}
+.input-xnodui--error {
+  border-color: #f31260;
+}
+.input-xnodui--error:hover {
+  border-color: #f31260;
+}
+.input-xnodui--error:focus {
+  border-color: #f31260;
+}
+.input-xnodui-error-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.2em;
+  margin-left: 0.05em;
+  /* border: solid 1px #88ff00; */
+}
+.input-xnodui-error {
+  color: #f31260;
+  font-size: 0.8em;
+  font-family: var(--input-font);
+  line-height: 1.1em;
+  margin-left: 0.2em;
+  width: 100%;
+}
+.input-xnodui-error-icon {
+  height: 0.75em;
+}
+
+.input-label-xnodui {
+  font-family: var(--input-font);
+  color: var(--input-text-color);
+  font-size: 0.9em;
+}
+.input-xnodui-password-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  width: 2.2em;
+  right: 0.8em;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+.input-wrapper-xnodui--password {
+  padding-right: 3em;
+}
+.input-xnodui-password-btn-icon {
+  stroke: var(--input-border-color);
+  transition: stroke 0.5s;
+}

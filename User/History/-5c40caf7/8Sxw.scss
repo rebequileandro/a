@@ -1,0 +1,19 @@
+.gradient-text{
+    margin-top: -1rem;
+    a{
+        position: relative;
+        font-size: .7rem;
+        cursor: pointer;
+        background: linear-gradient(90.19deg, #FF547B 0.16%, #D639FD 99.84%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 0.063rem;
+        background: var(--gradient-primary);
+      }
+}

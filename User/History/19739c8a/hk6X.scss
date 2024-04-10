@@ -1,0 +1,55 @@
+.card{
+    h1{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 0.688rem;
+    }
+    h2{
+        font-weight: 300;
+        font-size: 0.688rem;
+    }
+    .tranparent-gradient{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--gradient-secondary);
+        border-radius: 0.625rem 0.625rem 0rem 0rem;
+        width: 7.7rem;
+        height: 6.5rem;
+    }
+    .pink-gradient{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--gradient-primary);
+        border-radius:0rem 0rem 0.625rem 0.625rem;
+        width: 7.7rem;
+        height: 3.5rem;
+
+        .prices{
+            display: flex;
+            gap: .3rem;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        .addTocart{
+            position: relative;
+            text-align: center;
+            color: black;
+            background-color: white;
+            border-radius: 1.25rem;
+            font-weight: 600;
+            font-size: 0.5rem;
+            width: 7.8rem;
+            height: 1.68rem;
+            text-transform: uppercase;
+            padding: .4rem;
+        
+        }
+    }
+
+    margin-bottom: 5rem;
+}

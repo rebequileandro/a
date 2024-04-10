@@ -1,0 +1,41 @@
+.modal-overlay-xnodui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000075;
+  display: flex;
+  justify-content: center;
+  --modal-background-color-xnodui: #ffffffcb;
+  --modal-radius-xnodui: 1rem;
+}
+.modal-overlay-xnodui--center {
+  align-items: center;
+}
+.modal-overlay-xnodui--top {
+  align-items: flex-start;
+}
+.modal-overlay-xnodui--bottom {
+  align-items: flex-end;
+}
+
+.modal-container-xnodui {
+  display: inline-block;
+  padding: 1.5rem;
+  background: var(--modal-background-color-xnodui);
+  border-radius: var(--modal-radius-xnodui);
+  position: relative;
+}
+.modal-close-btn-xnodui {
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal-close-btn-icon-xnodui {
+  stroke: black;
+  width: 100%;
+}

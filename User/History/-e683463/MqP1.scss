@@ -1,0 +1,60 @@
+@import '../../../../../sass/stylesImports.scss';
+
+.linkedPopup {
+  &__overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.681);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  &__popup {
+    width: 90%;
+    min-height: 23rem;
+    border-radius: 2rem;
+    @include grey-gradient-bg;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  &__item {
+    width: 90%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__image {
+    width: 3rem;
+  }
+  &__linked {
+    margin-top: 2.5rem;
+    position: relative;
+  }
+  &__cancel {
+    margin-top: 2rem;
+  }
+  &__loading {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__input-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

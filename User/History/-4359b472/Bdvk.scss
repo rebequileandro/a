@@ -1,0 +1,28 @@
+.item-next-dates {
+  width: 100%;
+  min-height: 5rem;
+  background: rgba(255, 255, 255, 0.071);
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  z-index: 9;
+  transform: translateY(-100%);
+  &__celda {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:hover {
+      overflow: visible;
+    }
+  }
+}

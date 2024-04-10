@@ -1,0 +1,14 @@
+.item-drink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  &__image {
+    height: 4rem;
+  }
+  &__right-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

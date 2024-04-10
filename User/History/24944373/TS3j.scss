@@ -1,0 +1,40 @@
+.statistics-details-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 17rem;
+    .statistics-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 9rem;
+        gap: 1rem;
+        width: 100%;
+        position: fixed;
+        background: linear-gradient(180deg, #10010a 0%, #180211 100%);;
+        top: 7.5rem;
+        .buttons{
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+        }
+        .search-bar{
+            width: 85%;
+        }
+    }
+    .data-container{
+        width: 85%;
+        height: 95%;
+        background: var(--gradient-secondary);
+        border-radius: 1.5rem;
+        overflow-y: scroll;
+    }
+    hr{
+        border: none;
+        background: #999999;
+        height: 1px;
+    }
+}

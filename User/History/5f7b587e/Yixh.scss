@@ -1,0 +1,9 @@
+.btn {
+  @include gradien;
+  border-radius: 4rem;
+  color: #00102f;
+  transition: all 1s;
+  &:hover {
+    box-shadow: 0rem 0rem 2rem 0.1rem #006eff;
+  }
+}

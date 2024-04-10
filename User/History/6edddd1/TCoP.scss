@@ -1,0 +1,6 @@
+.btn {
+  &--btn-primary {
+    @include gradien;
+    width: 100;
+  }
+}

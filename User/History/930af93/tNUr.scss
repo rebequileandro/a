@@ -1,0 +1,21 @@
+@import '../../../sass/main.scss';
+.gradient-text {
+  margin-top: -0.8rem;
+  p {
+    position: relative;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background: var(--gradient-primary-left-to-right);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  p::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 0.063rem;
+    background: var(--gradient-primary);
+  }
+}

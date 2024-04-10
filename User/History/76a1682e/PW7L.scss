@@ -1,0 +1,48 @@
+@import "../../sass/stylesImports.scss";
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &__logo-wrapper {
+    border: solid 1px orange;
+    width: 15vw;
+    height: 50vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    &--hidden {
+      opacity: 1;
+      animation: fadeout 2s 1 forwards;
+    }
+  }
+  &__xlr-conector {
+    position: absolute;
+    width: 30%;
+    &--left {
+      left: 0;
+      bottom: 0;
+    }
+    &--right {
+      right: 0;
+      top: 0;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .error {
+    &__logo-wrapper {
+      width: 40vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+}

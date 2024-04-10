@@ -1,0 +1,20 @@
+.header-modules-container{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    .text-container{
+        width: 97%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    h3{
+        text-transform: capitalize;
+    }
+}

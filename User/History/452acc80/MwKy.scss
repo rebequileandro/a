@@ -1,0 +1,12 @@
+.not-found {
+  @include absolute-center;
+  &__animation {
+    width: 75vw;
+  }
+  &__text {
+    @include gradien-text;
+    position: absolute;
+    top: 5%;
+    font-size: 10rem;
+  }
+}

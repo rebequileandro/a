@@ -1,0 +1,49 @@
+.card{
+    h1{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 0.688rem;
+    }
+    h2{
+        font-weight: 300;
+        font-size: 0.688rem;
+    }
+    .tranparent-gradient{
+        background: var(--gradient-secondary);
+        width: 7.7rem;
+        height: 6.5rem;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .pink-gradient{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--gradient-primary);
+        width: 7.7rem;
+        height: 3.5rem;
+        
+        .addTocart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 1.25rem;
+            font-weight: 600;
+            font-size: 0.6rem;
+            width: 7.8rem;
+            height: 2rem;
+            text-transform: uppercase;
+            padding: .3rem;
+        
+        }
+        .prices{
+            display: flex;
+            gap: .3rem;
+            margin-top: .5rem;
+        }
+    }
+
+    margin-bottom: 5rem;
+}

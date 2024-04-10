@@ -1,0 +1,127 @@
+@use "../../sass/stylesImports.scss" as styles;
+
+.works {
+  width: 100%;
+  position: relative;
+
+  &__article {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    position: relative;
+    padding-top: 7rem;
+  }
+  &__title {
+    font-size: styles.$heading-size-16;
+  }
+  &__title-container {
+    position: relative;
+    display: inline-block;
+  }
+  &__frame-wrapper {
+    width: 100%;
+    height: 90%;
+    padding: 1rem;
+  }
+  &__demo-reel {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(5px 5px 23px #000000);
+    border: solid 1px #00f4f4;
+  }
+  &__carousel-slide {
+    width: 100%;
+    height: 60vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    @include styles.flex(column, nowrap, start, center);
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: solid 1px #00f4f41e;
+    transition: all 0.5s;
+    &:hover {
+      border: solid 1px #00f4f4a1;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__data-container {
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #000000d8;
+      backdrop-filter: blur(5px);
+      padding: 1rem;
+      border-top: solid 1px #ffffff0e;
+
+      &__title {
+        color: styles.$color-tertiary;
+      }
+      &__sub-title {
+        font-size: styles.$text-size-9;
+        color: styles.$color-primary;
+      }
+    }
+  }
+
+  //swiper
+
+  .works-swiper-slide {
+    margin-bottom: 5rem;
+  }
+  .swiper-wrapper {
+    transition-timing-function: ease-in-out;
+  }
+  .swiper-pagination-bullet {
+    background: #b3b3b36b;
+    opacity: 0.4;
+  }
+  .swiper-pagination-bullet-active {
+    background: styles.$color-tertiary;
+    opacity: 1;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: styles.$color-tertiary;
+    font-size: styles.$text-size-12;
+    margin-bottom: 5rem;
+    min-width: 3.5rem !important;
+    min-height: 3.5rem !important;
+    border-radius: 50%;
+    background: #000000dc;
+    @include styles.flex(column, nowrap, center, center);
+  }
+  .swiper-button-next:after {
+    margin-right: 3rem;
+  }
+  .swiper-button-prev:after {
+    margin-left: 3rem;
+  }
+
+  //graphics
+  &__dots {
+    position: absolute;
+    width: 130%;
+    right: 0;
+    top: 120%;
+    z-index: -1;
+  }
+  &__ring {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    z-index: -1;
+    width: 30%;
+  }
+  &__ring3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13%;
+  }
+}

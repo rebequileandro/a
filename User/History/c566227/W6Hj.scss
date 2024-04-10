@@ -1,0 +1,15 @@
+@use "../../sass/stylesImports.scss" as styles;
+.home {
+  &__form {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include styles.flex(row, nowrap, space-between, center);
+    padding: 2rem;
+    .btn {
+      width: 5rem;
+      height: 5rem;
+      padding: 1rem;
+    }
+  }
+}

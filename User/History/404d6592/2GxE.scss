@@ -1,0 +1,5 @@
+@import '../../../sass/stylesImports.scss';
+
+.point_card {
+  @include grey-gradient-bg;
+}

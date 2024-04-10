@@ -1,0 +1,5 @@
+.recap {
+  width: 100%;
+  padding: 5rem;
+  @include styles.flex-config(flex, center, center, column, nowrap);
+}

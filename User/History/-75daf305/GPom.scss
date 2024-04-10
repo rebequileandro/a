@@ -1,0 +1,49 @@
+.c2022 {
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transform: rotate(-3deg);
+  // border: solid 1px aqua;
+  &__image {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+  &__calendar {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translateX(-30%);
+    color: black;
+    width: 70%;
+    button {
+      color: black;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .c2022 {
+    &__calendar {
+      top: 30%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .c2022 {
+    height: auto;
+    width: 85vw;
+    &__image {
+      width: 100%;
+    }
+
+    .calendar {
+      &__month {
+        font-size: 3.5vw;
+      }
+      &__day {
+        font-size: 1.7vw;
+      }
+    }
+  }
+}

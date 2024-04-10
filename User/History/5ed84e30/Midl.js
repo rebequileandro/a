@@ -1,0 +1,20 @@
+import axios from 'axios'
+const { REACT_APP_API } = process.env
+
+export const getData = () => async (dispatch) =>{
+    await axios.get(`${REACT_APP_API}`)
+    .then(res => {
+     dispatch({
+         type: 'GET_DATA',
+         payload: res.data
+     })
+    })       
+}
+export const modify = (id, data) => async (dispatch) =>{
+    await axios.patch(`${REACT_APP_API}/${id}`, data)
+    dispatch(getData())   
+}
+
+export const modifyImage = (id, image) => async () =>{
+    await axios.patch(`${REACT_APP_API}/${id}`, image)     
+}

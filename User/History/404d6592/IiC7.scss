@@ -1,0 +1,44 @@
+@import '../../../../sass/stylesImports.scss';
+
+.point_card {
+  @include grey-gradient-bg;
+  width: 100%;
+  min-height: 49rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.7rem 5rem;
+  &__user {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+  }
+  &__btn {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 1.2rem;
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__action {
+    margin-top: 2.4rem;
+    text-align: center;
+  }
+  &__club {
+    @include green-gradient-light-text--animated;
+  }
+  &__adress {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}

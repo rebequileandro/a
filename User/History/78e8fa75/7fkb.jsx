@@ -1,0 +1,23 @@
+import React from 'react'
+import { useSelector } from 'react-redux'
+import { Card } from '../../components/card/Card'
+
+export const Promotions = () => {
+  const getCart = useSelector((state) => state.cart.cart)
+
+  return (
+    <div className='promotions'>
+      {
+        getCart?.map(e =>(
+          <Card 
+            name={e.name} 
+            price={e.price} 
+            oldPrice={'1000,00'}
+            image={e.image}
+            />
+            
+        ))
+      }
+    </div>
+  )
+}

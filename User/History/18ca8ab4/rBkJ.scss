@@ -1,0 +1,86 @@
+.calendar {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  row-gap: 2%;
+
+  &__month-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5%;
+    row-gap: 1%;
+    opacity: 0.7;
+    &--avariable {
+      opacity: 1;
+    }
+  }
+  &__line {
+    position: absolute;
+    width: 1rem;
+    opacity: 0.7;
+  }
+  &__day-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__day {
+    font-family: Shadow;
+    font-weight: 700;
+    font-size: 1.2vh;
+    text-align: center;
+  }
+
+  &__month {
+    font-family: Shadow;
+    font-weight: 400;
+    font-size: 2vh;
+    grid-column: 1 / span 7;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    &--avariable {
+      font-weight: 700;
+    }
+  }
+  &__marker-month {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.7;
+  }
+}
+@media (max-width: 820px) {
+  .calendar {
+    row-gap: 0rem;
+    &__month-wrapper {
+      gap: 0;
+    }
+    &__line {
+      width: 2rem;
+    }
+    &__month {
+      font-size: 3.4vw;
+    }
+    &__day {
+      font-size: 1.7vw;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .calendar {
+    &__line {
+      width: 1.3rem;
+    }
+    // &__month {
+    //   font-size: 3.4vw;
+    // }
+    // &__day {
+    //   font-size: 1.7vw;
+    // }
+  }
+}

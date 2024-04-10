@@ -1,0 +1,7 @@
+@use "../../sass/stylesImports.scss" as styles;
+.nav {
+  @include styles.flex(row, nowrap, center, center);
+  gap: 1rem;
+  font-size: styles.$text-size-9;
+  font-weight: 600;
+}

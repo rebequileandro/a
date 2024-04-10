@@ -1,0 +1,10 @@
+.no-inventory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__text {
+    width: 80%;
+  }
+}

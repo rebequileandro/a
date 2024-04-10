@@ -1,0 +1,91 @@
+.header-container {
+  width: 100%;
+  position: fixed;
+  background-color: #10010b;
+  z-index: 5;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    cursor: pointer;
+  }
+  .header-sub-container {
+    width: 85%;
+  }
+  h1 {
+    font-family: "Acumin Pro Wide";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 !important;
+  }
+  .anchor {
+    width: 1.5rem;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.43rem;
+    height: 1.78rem;
+    margin-bottom: 1.5rem;
+  }
+  .organizer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    font-family: "Acumin Pro Wide";
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .organizer-party-container {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.367);
+    height: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    h2 {
+      font-family: "Acumin Pro Wide";
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+    .organizer-party {
+      font-weight: 400;
+    }
+    .path{
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .title {
+    margin-bottom: 1rem;
+    h2 {
+      font-family: "Acumin Pro Wide";
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
+  .party {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    h1 {
+      font-weight: 500;
+      font-size: 1.25rem;
+      text-transform: capitalize;
+    }
+  }
+}

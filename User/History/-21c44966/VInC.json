@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "inputLabel": "Número de tarjeta:",
+      "inputPlaceholder": "xxxxxxxxxxxxxxxxxxx",
+      "inputName": "number"
+    }
+  ],
+  [
+    {
+      "inputLabel": "Número de tarjeta:",
+      "inputPlaceholder": "xxxxxxxxxxxxxxxxxxx",
+      "inputName": "number"
+    },
+    {
+      "inputLabel": "Número de tarjeta:",
+      "inputPlaceholder": "xxxxxxxxxxxxxxxxxxx",
+      "inputName": "number"
+    }
+  ]
+]

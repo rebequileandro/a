@@ -1,0 +1,24 @@
+@import '../../../sass/stylesImports.scss';
+
+.button {
+  width: 100%;
+  font-size: $text-size-16;
+  position: relative;
+
+  button {
+    display: block;
+  }
+
+  button.loading {
+    color: transparent;
+  }
+
+  .loading-animation {
+    position: absolute;
+    left: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

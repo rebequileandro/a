@@ -1,0 +1,33 @@
+.section-two {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+    transform: rotate(-90deg);
+  }
+
+  &__image-container {
+    width: 50%;
+  }
+  &__data {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

@@ -1,0 +1,19 @@
+.error-wrapper {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.2rem;
+  margin-left: 0.05rem;
+
+  .error {
+    color: #f31260;
+    font-size: 0.8em;
+    font-family: var(--input-font);
+    line-height: 1.1em;
+    margin-left: 0.2em;
+    width: 100%;
+  }
+  .error-icon {
+    height: 0.75em;
+  }
+}

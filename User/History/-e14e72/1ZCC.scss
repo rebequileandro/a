@@ -1,0 +1,72 @@
+.clinical-simulator {
+  justify-content: space-between;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: calc(100% - 3rem) !important;
+  height: calc(100% - 8.5rem) !important;
+
+  &__chat-container {
+    width: 98%;
+    height: 99%;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  &__no-message {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__no-message-text {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  &__no-message-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__chat-input {
+    width: 100%;
+    background: linear-gradient(to left, #6400ff 0%, #1f0546 90%);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    position: relative;
+    transform: translateY(1px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 0.6rem);
+      height: calc(100% - 0.6rem);
+      border-radius: 1rem;
+      left: 0.3rem;
+      top: 0.3rem;
+      background: white;
+      z-index: -1;
+    }
+    &__button-container {
+      height: 100%;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clinical-simulator {
+    justify-content: space-between;
+    position: fixed;
+
+    left: auto;
+    margin: 0 auto;
+    width: 70% !important;
+    height: calc(100% - 6.5rem) !important;
+  }
+}

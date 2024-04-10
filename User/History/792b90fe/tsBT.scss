@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", sans-serif;
+}
+.heading-primary {
+  font-family: "Roboto", sans-serif;
+
+  &--main {
+    font-size: $heading-size-24;
+    font-weight: 700;
+  }
+  &--sub {
+    font-size: $heading-size-24;
+    font-weight: 500;
+  }
+}
+
+.heading-secondary {
+  font-family: "Roboto", sans-serif;
+
+  &--main {
+    font-size: $heading-size-20;
+    font-weight: 700;
+  }
+  &--sub {
+    font-size: $heading-size-20;
+    font-weight: 500;
+  }
+}
+.heading-tertiary {
+  font-family: "Roboto", sans-serif;
+
+  &--main {
+    font-size: $text-size-18;
+    font-weight: 700;
+  }
+  &--sub {
+    font-size: $text-size-18;
+    font-weight: 500;
+  }
+}
+
+.highlighted {
+  color: $color-primary;
+}

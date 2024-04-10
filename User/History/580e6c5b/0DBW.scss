@@ -1,0 +1,87 @@
+@import '../../../sass/stylesImports.scss';
+.tabbar-space-organizer {
+  position: relative;
+  height: 12rem;
+}
+.hide-tabbar-organizer {
+  display: none;
+}
+.tabbar-container {
+  @include primary-gradient-dark-bg;
+  border-radius: 2rem;
+  box-shadow: 0 0.8rem 1rem rgba(69, 60, 123, 0.1);
+  width: 85%;
+  height: 6rem;
+  position: fixed;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 22;
+  .icon-container-organizer {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p {
+    font-size: $text-size-12;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Acumin Pro Wide', sans-serif;
+  }
+
+  .active_home {
+    img {
+      content: url('../../../assets//icons/Selected-Icons/selected_home.svg');
+    }
+    p {
+      @include app-gradient-dark-txt;
+    }
+  }
+  .active_activities {
+    img {
+      content: url('../../../assets//icons/Selected-Icons/selected_activities.svg');
+    }
+    p {
+      @include app-gradient-dark-txt;
+    }
+  }
+  .active_inventory {
+    img {
+      content: url('../../../assets//icons/Selected-Icons/selected_drinks.svg');
+    }
+    p {
+      @include app-gradient-dark-txt;
+    }
+  }
+  .active_dashboard {
+    img {
+      content: url('../../../assets//icons/Selected-Icons/selected_dashboard.svg');
+    }
+    p {
+      @include app-gradient-dark-txt;
+    }
+  }
+  .active_settings {
+    img {
+      content: url('../../../assets//icons/Selected-Icons/selected_settings.svg');
+    }
+    p {
+      @include app-gradient-dark-txt;
+    }
+  }
+}

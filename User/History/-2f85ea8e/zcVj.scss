@@ -1,0 +1,46 @@
+.text-primary {
+  color: $WHITE-COLOR;
+  &--main {
+    font-size: $SIZE-42;
+    font-weight: 700;
+  }
+}
+
+.text-secondary {
+  color: $WHITE-COLOR;
+
+  &--main {
+    font-size: $SIZE-20;
+    font-weight: 400;
+  }
+  &--upper {
+    text-transform: uppercase;
+  }
+  &--opacity-07 {
+    opacity: 0.7;
+  }
+}
+
+.heading-tertiary {
+  /*h3*/
+  color: $WHITE-COLOR;
+  font-family: "Acumin Pro Wide", sans-serif;
+  &-main {
+    /*Drinks name*/
+    font-family: inherit;
+    font-size: $SIZE-14;
+    font-weight: 600;
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+
+  &-sub {
+    /*Drinks price*/
+    font-size: $SIZE-16;
+    font-weight: 600;
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+}

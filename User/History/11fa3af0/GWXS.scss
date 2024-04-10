@@ -1,0 +1,107 @@
+.container-qr-cash-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    h2{
+        font-family: 'Acumin Pro Wide';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-top: 2rem
+    }
+    .order{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        width: 19.37rem;
+        min-height: 34.37rem;
+        background: var(--gradient-secondary);
+        filter: drop-shadow(0px 0.25rem 1.313rem rgba(243, 21, 248, 0.16));
+        border-radius: 0.93rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        h1{
+            margin-top: 1.3rem;
+          
+        }
+        p{
+            width: 16rem;
+            margin-top: .4rem;
+            font-family: 'Acumin Pro Wide';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+        .qr-code{
+            margin-top: 1.2rem;
+        }
+    }
+    .products-ticket{
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+    .products-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .products{
+        width: 85%;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 1.75rem;
+        }
+        .image-bottle{
+            width: 1rem;
+        }
+        .image-pack{
+            display: flex;
+            align-items: baseline;
+        }
+        h2{
+            margin:0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .image-amount{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            .amount{
+                display: flex;
+                align-items: center;
+            }
+        }
+        h3{
+            font-family: 'Lato';
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        p{
+            width: auto;
+        }
+    }
+    .order-number{
+        margin-top: 1.5rem;
+        height: 5rem;
+        display: flex;
+
+        h1{
+            text-transform: none;
+            background: var(--gradient-primary-left-to-right);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Acumin Pro Wide';
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
+}

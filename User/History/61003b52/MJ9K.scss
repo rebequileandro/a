@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    border: solid 3px white;
+    padding: 0.6rem;
+  }
+}

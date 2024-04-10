@@ -1,0 +1,230 @@
+.statistics-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 6.5rem;
+    padding-top: 9rem;
+
+    .title {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-family: 'Acumin Pro Wide';
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+    .date {
+        width: 6.93rem;
+        height: 2.18rem;
+        background: var(--gradient-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 1.5rem;
+
+        p {
+            font-weight: 300;
+            font-size: 0.75rem;
+        }
+    }
+    .chart-wrapper {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .chart-container {
+        position: relative;
+        width: 85%;
+        min-height: 23rem;
+        background: var(--gradient-secondary);
+        border-radius: 1.5rem;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+
+        span {
+            font-family: 'Rajdhani';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 0.75rem;
+        }
+
+        h1 {
+            position: absolute;
+            top: 7%;
+        }
+
+        .first {
+            position: absolute;
+            top: -2%;
+            right: 5%;
+            opacity: 0;
+            animation: showup 0.3s 1 0.2s forwards;
+            text-align: center;
+
+            span {
+                color: #de79c3;
+            }
+        }
+
+        .second {
+            position: absolute;
+            top: 40%;
+            right: -20%;
+            opacity: 0;
+            animation: showup 0.3s 1 0.3s forwards;
+            text-align: center;
+
+            span {
+                color: #4abed3;
+            }
+        }
+
+        .third {
+            position: absolute;
+            opacity: 0;
+            bottom: -6%;
+            right: 20%;
+            animation: showup 0.3s 1 0.4s forwards;
+            text-align: center;
+
+            span {
+                color: #7f43d4;
+            }
+        }
+
+        .others {
+            position: absolute;
+            opacity: 0;
+            bottom: 8%;
+            left: -8%;
+            animation: showup 0.3s 1 0.5s forwards;
+            text-align: center;
+
+            span {
+                color: #cbcb46;
+            }
+        }
+
+        .fourth {
+            position: absolute;
+            opacity: 0;
+            left: -23%;
+            animation: showup 0.3s 1 0.6s forwards;
+            text-align: center;
+
+            span {
+                color: #2bcd56;
+            }
+        }
+
+        .fifth {
+            position: absolute;
+            opacity: 0;
+            top: 0%;
+            left: -2%;
+            animation: showup 0.3s 1 0.7s forwards;
+            text-align: center;
+
+            span {
+                color: #fdad66
+            }
+        }
+    }
+
+    .data-container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .secodary-container {
+        height: 8.75rem;
+        width: 85%;
+        background: var(--gradient-secondary);
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .details{
+            align-self: flex-end;
+            background-color: #4abed33f;
+        }
+        .number-container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 95%;
+
+            h1 {
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-family: 'Rajdhani';
+                font-weight: 400;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .chart {
+        position: relative;
+        width: 9.6rem;
+        height: 9.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .total {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                position: relative;
+                margin-top: 3%;
+            }
+        }
+    }
+
+}
+
+@keyframes showup {
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}

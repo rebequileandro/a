@@ -1,0 +1,35 @@
+{
+  "entradas": [
+    {
+      "name": "Papas fritas",
+      "prie": 900
+    },
+    {
+      "name": "Papas rústicas",
+      "prie": 600
+    },
+    {
+      "name": "provoleta",
+      "prie": 700
+    },
+    {
+      "name": "provoleta especial",
+      "prie": 800
+    },
+    {
+      "name": "Bastones de espinaca",
+      "prie": 600
+    },
+    {
+      "name": "tequeños",
+      "prie": 1000
+    }
+  ],
+  "classicPizza": [
+    {
+      "name": "Margarita",
+      "description": "Queso, tomate y albahaca.",
+      "prie": 800
+    }
+  ]
+}

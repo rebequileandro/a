@@ -1,0 +1,10 @@
+.home {
+  width: 100%;
+  height: calc(100% - 2.5rem);
+  padding-top: 3rem;
+  overflow-y: scroll;
+  &__spacer {
+    height: 3rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../sass/stylesImports.scss';
+.notifications-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  &__sub-title {
+    margin-bottom: 1.4rem;
+  }
+  &__section-this-week {
+    width: 100%;
+    margin-top: 1.7rem;
+  }
+  &__section-previous {
+    width: 100%;
+    margin-top: 3.7rem;
+    margin-bottom: 3.7rem;
+  }
+  &__no-notifications {
+    &__icon {
+      width: 18rem;
+    }
+  }
+}

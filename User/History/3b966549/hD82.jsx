@@ -1,0 +1,23 @@
+import React from 'react'
+import './TabbarOrganizer.scss'
+import home from '../../../assets/icons/icon_home.svg'
+import settings from '../../../assets/icons/icon_settings.svg'
+import drinks from '../../../assets/icons/drinks.svg'
+export const TabbarOrganizer = () => {
+  return (
+    <div className='tabbar-container'>
+        <button>
+            <img src={home} alt=""/>
+        </button>
+        <button>
+            <img src={drinks} alt=""/>
+        </button>
+        <button>
+            <img src={drinks} alt=""/>
+        </button>
+        <button>
+            <img src={settings} alt=""/>
+        </button>
+    </div>
+  )
+}

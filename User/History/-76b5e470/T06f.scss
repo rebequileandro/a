@@ -1,0 +1,62 @@
+@import '../../../sass/stylesImports.scss';
+.products-section {
+  margin-top: 3rem;
+  position: relative;
+  &__title {
+    position: absolute;
+    border-top-right-radius: 25rem;
+    border-bottom-right-radius: 25rem;
+    padding: 1rem 5rem 1rem 2rem;
+    left: -20px;
+    width: fit-content;
+    @include grey-gradient-bg;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .category-section {
+    &:not(:first-child) {
+      padding-top: 6rem;
+    }
+  }
+  .subcategory-section {
+    &:first-child {
+      padding-top: 6.5rem;
+    }
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    .subcategory-products {
+      &--drinks {
+        display: flex;
+        overflow-y: scroll;
+        gap: 1rem;
+        padding: 1rem 2rem 0 0;
+      }
+      &--foods {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__noStock-main {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__noStock-img {
+    animation: fadein 0.3s ease-in-out;
+    height: 9rem;
+  }
+  &__noStock-txt {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}

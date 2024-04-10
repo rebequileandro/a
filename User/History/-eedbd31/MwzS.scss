@@ -1,0 +1,32 @@
+.create-pack-overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.62rem);
+    background: linear-gradient(180deg, rgba(7, 1, 4, 0.438) 0%, rgba(70, 5, 56, 0.66) 100%);
+    z-index: 99;
+    .create-pack-popup{
+        width: 80%;
+        height: 10rem;
+        border-radius: 1.25rem;
+        background: var(--gradient-secondary);
+        transform: scale(0.7);
+        animation: popup 0.3s 1 forwards;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .wrapper{
+        padding: 1px;
+        background: var(--gradient-primary);
+    }
+    @keyframes popup {
+        to{
+            transform: scale(1);
+        }
+    }
+}

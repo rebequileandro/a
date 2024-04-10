@@ -1,0 +1,79 @@
+@import '../../../../sass/stylesImports.scss';
+.new-bottle-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(11px);
+  z-index: 6;
+  .new-bottle-popup {
+    width: 85%;
+    height: 35rem;
+    border-radius: 1.5rem;
+    @include grey-gradient-bg;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    &__search-category {
+      position: relative;
+
+      .section-searchBar {
+        &__form__searchWrap {
+          z-index: 9;
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+    &__catogori-options {
+      position: absolute;
+      z-index: 8;
+      width: 100%;
+      height: 25.7rem;
+      @include grey-gradient-bg;
+      backdrop-filter: blur(1rem);
+      -webkit-backdrop-filter: blur(1rem);
+      background-color: rgba(0, 0, 0, 0.193);
+      border-radius: 0 0 2rem 2rem;
+      overflow-y: scroll;
+      top: 50%;
+      text-align: center;
+      padding-top: 3.7rem;
+      &__item {
+      }
+    }
+  }
+  .title {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: $text-size-16;
+  }
+  input {
+    background-color: #80737c;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.481);
+    }
+  }
+  .save-popup {
+    @include primary-gradient-dark-bg;
+    color: white;
+    width: 60%;
+    height: 4rem;
+    border-radius: 4rem;
+    font-weight: 500;
+    font-size: $text-size-14;
+  }
+  .cancel-popup {
+    color: white;
+    text-decoration: underline;
+    margin-top: 1rem;
+    font-size: $text-size-12;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../../sass/stylesImports.scss';
+
+.card-event-main {
+  position: relative;
+
+  &__heading--container {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    justify-content: center;
+    &__title {
+      width: auto;
+      text-align: center;
+      color: white;
+      font-family: 'Rajdhani';
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-shadow: 0rem 0rem 0.31rem #d482fb;
+      font-weight: 500;
+      word-break: break-word;
+    }
+  }
+
+  &__picture--container {
+    display: flex;
+    height: 12rem;
+    overflow: hidden;
+    width: 10rem;
+    border-radius: 1.5rem;
+  }
+  &__picture {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__address {
+  }
+}

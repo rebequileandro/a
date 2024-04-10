@@ -1,0 +1,15 @@
+import React from 'react'
+import './Searchbar.scss'
+const Searchbar = () => {
+    const date = new Date() 
+  return (
+    <div className='searchbar-container'>
+        <div>
+            <h1>user user</h1>
+            <h3>{date}</h3>
+        </div>
+    </div>
+  )
+}
+
+export default Searchbar

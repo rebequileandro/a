@@ -1,0 +1,48 @@
+.unit-manager-settings-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    .row-container{
+        width: 85%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h2{
+        font-family: 'Acumin Pro Wide';
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    hr{
+        width: 100%;
+        border: none;
+        height: 1px;
+        background: var(--gradient-primary-left-to-right);
+    }
+    p{
+        font-weight: 300;
+        font-size: 0.87rem;
+        text-transform: capitalize;
+    }
+    .input-edit-container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: 3rem;
+        input{
+            color: #c7c2c5
+        }
+        select{
+            font-weight: 600;
+            text-transform: capitalize;
+            &::before{
+                border: none;
+            }
+        }
+    }
+}

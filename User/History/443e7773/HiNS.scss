@@ -1,0 +1,5 @@
+@use "../../sass/stylesImports.scss" as styles;
+
+.login {
+  @include styles.flex(column, nowrap, center, center);
+}

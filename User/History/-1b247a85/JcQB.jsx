@@ -1,0 +1,14 @@
+import React from 'react';
+import { Header } from '../../../components/global/Header/Header';
+import { useNavigate } from 'react-router-dom';
+
+const ReturnPoints = () => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <Header title={'Devolución puntos'} backbutton={() => navigate(-1)} />
+      <section className="return-points layout-primary"></section>
+    </>
+  );
+};
+export default ReturnPoints;

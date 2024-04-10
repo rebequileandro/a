@@ -1,0 +1,52 @@
+import React from "react";
+import "./select_month.scss";
+import { formatDateMont } from "../../utils/format-date";
+import data from "../../models/data";
+import C2022 from "../Calendar/2022/2022";
+import C2023 from "../Calendar/2023/2023";
+import { Slider } from "infinite-react-carousel";
+import { useState } from "react";
+
+const SelectMonth = ({ month, setMonth }) => {
+  const [screenWidth, setscreenWidth] = useState();
+  const handleClick = (y, m) => {
+    const monthFilter = data.bzrpTour[y].filter(
+      (e) => formatDateMont(e.date) === m
+    );
+    if (monthFilter.length) {
+      setMonth(monthFilter);
+    }
+  };
+  const settings = {
+    wheel: true,
+    wheelScroll: 1,
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+  };
+  useEffect(() => {
+    window.addEventListener("resize", () => {});
+  }, []);
+
+  return (
+    <>
+      {!month && (
+        <div className="select-month-wrapper">
+          {screenWidth < 650 ? (
+            <Slider {...settings}>
+              <C2022 onClick={handleClick} />
+              <C2023 onClick={handleClick} />
+            </Slider>
+          ) : (
+            <div className="select-month-tour">
+              <C2022 onClick={handleClick} />
+              <C2023 onClick={handleClick} />
+            </div>
+          )}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default SelectMonth;

@@ -1,0 +1,25 @@
+.modal-overlay-xnodui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000075;
+  display: flex;
+  justify-content: center;
+}
+.modal-overlay-xnodui--center {
+  align-items: center;
+}
+.modal-overlay-xnodui--top {
+  align-items: flex-start;
+}
+.modal-overlay-xnodui--bottom {
+  align-items: flex-end;
+}
+
+.modal-container-xnodui {
+  border: solid 1px orange;
+  display: inline-block;
+  padding: 1rem;
+}

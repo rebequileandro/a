@@ -1,0 +1,111 @@
+/******** 
+ACUMIN PRO WIDE
+********/
+
+/* Thin */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Thin.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin Pro Wide Thin.otf') format('opentype');
+  font-weight: 100;
+  font-display: swap;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide ExtraLight.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Light.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Book.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ Book.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Medium.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Semibold.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/AcuminProWide-Bold.woff2') format('woff2'),
+    url('./AcuminProWide/AcuminProWide-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide Black.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ Black.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: url('./AcuminProWide/Acumin Pro Wide UltraBlack.woff2') format('woff2'),
+    url('./AcuminProWide/Acumin\ Pro\ Wide\ UltraBlack.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+}
+
+/******** 
+  RAJDHANI
+  ********/
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./Rajdhani/Rajdhani-Regular.woff2') format('woff2'),
+    url('./Rajdhani/Rajdhani-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./Rajdhani/Rajdhani-Medium.woff2') format('woff2'),
+    url('./Rajdhani/Rajdhani-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./Rajdhani/Rajdhani-Bold.woff2') format('woff2'),
+    url('./Rajdhani/Rajdhani-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}

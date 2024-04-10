@@ -1,0 +1,12 @@
+@use "../../sass/stylesImports.scss" as styles;
+
+.forgot-password {
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2.3rem;
+  @include styles.flex(column, nowrap, space-between, center);
+  &__input-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+//******* Shadow *******//
+@font-face {
+  font-family: "Shadow";
+  src: url("./ShadowsIntoLight-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Shadow-Medium";
+  src: url("./ShadowsIntoLight-Regular.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  text-shadow: 0px 0px 0px #000000;
+}
+//******* Alpine Script *******//
+@font-face {
+  font-family: "Alpine Script";
+  src: url("./Alpine\ Script.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+//******* Digital-Dismay *******//
+@font-face {
+  font-family: "Digital-Dismay";
+  src: url("./digital-dismay.woff2") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+//******* Teko *******//
+@font-face {
+  font-family: "Teko";
+  src: url("./Teko/Teko-Regular.woff2") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Teko";
+  src: url("./Teko/Teko-Medium.woff2") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Teko";
+  src: url("./Teko/Teko-Bold.woff2") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}

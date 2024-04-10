@@ -1,0 +1,13 @@
+@import '../../../sass/stylesImports.scss';
+.cashier-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .ticket-cashier-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

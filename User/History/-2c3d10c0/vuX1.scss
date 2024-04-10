@@ -1,0 +1,39 @@
+@use "../../sass/stylesImports" as styles;
+
+.login {
+  height: 100%;
+
+  &__title {
+    font-family: "Shadow";
+    font-weight: 400;
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+  }
+  &__form {
+    @include styles.flex-config(flex, center, center, column, nowrap);
+    gap: 2rem;
+    width: 25%;
+    text-align: center;
+  }
+  &__submit {
+    margin-top: 1rem;
+    width: 100%;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-family: "Teko";
+    font-weight: 400;
+    transition: all 0.5s;
+    @include styles.flex-config(flex, center, center, column, nowrap);
+    padding: 0.2rem;
+    &:hover {
+      transform: translateY(0.6rem);
+      background-color: #fff;
+      color: black;
+      circle {
+        stroke: black;
+      }
+    }
+  }
+}

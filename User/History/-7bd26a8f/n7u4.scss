@@ -1,0 +1,45 @@
+@import '../../../../sass/stylesImports.scss';
+
+.checkout-party-card {
+  margin-top: 2rem;
+  width: 100%;
+  height: 11rem;
+  @include grey-gradient-bg;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  @include flex-config(flex, row, nowrap, flex-start, center);
+  &__image-wrapper {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    &__image {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .party-container {
+    @include flex-config(flex, column, nowrap, center, flex-start);
+    gap: 0.4rem;
+
+    .party {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+    .preparation-time {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem;
+      font-family: 'Acumin Pro Wide', sans-serif;
+      font-size: $text-size-12;
+      font-weight: 300;
+      line-height: 1.44rem;
+      @include green-gradient-light-text();
+    }
+  }
+}

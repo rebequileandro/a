@@ -1,0 +1,10 @@
+.gradient-text{
+    a{
+        font-size: .7rem;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "65d776bd93889d2b0a6996ec",
+    "city": "CDMX",
+    "country": "México",
+    "flag": "🇲🇽",
+    "date": "2024-05-11T00:00:00.000Z",
+    "show": "Autódromo Hnos. Rodríguez",
+    "availability": true,
+    "link": "https://www.ticketmaster.com.mx/event/1400605084390A0D",
+    "__v": 0
+  },
+  {
+    "_id": "65e63c9147fa835ffbc1bf20",
+    "city": "California",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-04-19T00:00:00.000Z",
+    "show": "Coachella",
+    "availability": true,
+    "link": "https://www.axs.com/festivals/486319",
+    "__v": 0
+  },
+  {
+    "_id": "65e63d5947fa835ffbc1bf24",
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "flag": "🇵🇷",
+    "date": "2024-04-28T00:00:00.000Z",
+    "show": "Coca Cola Music Hall",
+    "availability": true,
+    "link": "https://ticketera.com/bizarrap-ccmh/",
+    "__v": 0
+  },
+  {
+    "_id": "65e63dc547fa835ffbc1bf27",
+    "city": "Nueva York",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-05-22T00:00:00.000Z",
+    "show": "Terminal 5",
+    "availability": true,
+    "link": "https://www.axs.com/events/529386/bizarrap-tickets?skin=terminal5",
+    "__v": 0
+  },
+  {
+    "_id": "65e63e4b47fa835ffbc1bf2a",
+    "city": "Chicago",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-05-25T00:00:00.000Z",
+    "show": "Sueños Chicago",
+    "availability": false,
+    "link": "https://www.suenosmusicfestival.com/",
+    "__v": 0
+  }
+]

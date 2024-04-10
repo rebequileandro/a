@@ -1,0 +1,26 @@
+{
+  "short_name": "Bzrp",
+  "name": "Bizarrap",
+  "description": "Encuentra contenido exclusivo, últimos shows, próximas fechas y muchos más sobre Bizarrap.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/*",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/*",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

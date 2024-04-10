@@ -1,0 +1,41 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin limits($width: 0, $height: 0, $margin: 0, $padding: 0) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+}
+
+/*----| GRADIENT COLORS |----*/
+@mixin gradien-background {
+  background: linear-gradient(
+    180deg,
+    $SECONDARY-BACKGROUND-COLOR 0%,
+    $PRIMARY-BACKGROUND-COLOR 80%
+  );
+}
+@mixin gradien-scroll-bar {
+  background: linear-gradient(180deg, $SECONDARY-COLOR 0%, $TERTIARY-COLOR 80%);
+}
+@mixin gradien-text {
+  // background: linear-gradient(90deg, $SECONDARY-COLOR 0%, $TERTIARY-COLOR 80%);
+  background: rgb(27, 197, 142);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 197, 142, 1) 0%,
+    rgba(36, 184, 211, 1) 65%,
+    rgba(0, 255, 239, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

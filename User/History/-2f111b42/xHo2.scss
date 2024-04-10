@@ -1,0 +1,193 @@
+@use "../../../../sass/stylesImports" as styles;
+
+.edit-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #00000051;
+  backdrop-filter: blur(5px);
+  @include styles.flex-config(flex, center, center, row, nowrap);
+
+  &__close-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  &__container {
+    width: 60%;
+    height: 90%;
+    overflow-y: scroll;
+    background-color: #101010d1;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    @include styles.flex-config(flex, start, center, column, nowrap);
+    padding: 2rem;
+    position: relative;
+    animation: fadein-scale-1 1 0.4s forwards;
+  }
+  &__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.2rem;
+  }
+  &__buttons-wrapper {
+    width: 100%;
+    @include styles.flex-config(flex, center, center, row, nowrap);
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  &__delete-date {
+    align-self: flex-start;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #ff0000aa;
+  }
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  &__error {
+    color: #ff0000f7;
+    font-weight: 600;
+  }
+  &__done {
+    color: #00ffc3cf;
+    font-weight: 600;
+  }
+  &__img-btn {
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    @include styles.flex-config(flex, center, center, row, nowrap);
+    opacity: 0.8;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    &--l {
+      width: 16rem;
+      height: 9rem;
+      font-size: 4rem;
+    }
+    &--m {
+      width: 9rem;
+      height: 9rem;
+      font-size: 4rem;
+    }
+    &--s {
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 2rem;
+    }
+    &--img {
+      width: 95%;
+    }
+    &--noborder {
+      border: none;
+    }
+  }
+  &__img-wrapper {
+    width: 100%;
+    @include styles.flex-config(flex, start, start, row, nowrap);
+    // border: solid 1px aqua;
+    gap: 2rem;
+  }
+  &__img-label-weapper {
+    min-width: 9rem;
+    &--label {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__input-file {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  &__polaroid-img-container {
+    width: 4.5rem;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "X"; /* Contenido del elemento ::after, en este caso, una "X" */
+      position: absolute; /* Lo posicionamos absolutamente dentro del contenedor */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #00000080; /* Color de fondo del overlay con transparencia */
+      color: white; /* Color del texto de la "X" */
+      font-size: 24px; /* Tamaño de fuente de la "X" */
+      visibility: hidden; /* Inicialmente oculto */
+      opacity: 0; /* Inicialmente transparente */
+      transition: opacity 0.3s ease-in-out;
+      cursor: pointer;
+      @include styles.flex-config(flex, center, center, row, wrap);
+    }
+    &:hover::after {
+      visibility: visible; /* Mostrar el overlay */
+      opacity: 1; /* Hacerlo completamente visible */
+    }
+  }
+  &__polaroid-img {
+    width: 100%;
+  }
+  &__img-polaroid-wrapper {
+    @include styles.flex-config(flex, start, center, row, wrap);
+    max-width: 22rem;
+    min-width: 9rem;
+    // border: solid 1px aqua;
+    gap: 0.5rem;
+  }
+  &__video-container {
+    // width: 100%;
+    // border: solid 1px aqua;
+    position: relative;
+  }
+  &__video {
+    width: 16rem;
+  }
+  &__remove-btn {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    @include styles.flex-config(flex, center, center, row, wrap);
+    -webkit-box-shadow: -12px 13px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 13px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 13px 15px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (max-width: 820px) {
+  .edit-popup {
+    &__container {
+      width: 90%;
+      min-height: 20%;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "inputLabel": "Número de tarjeta:",
+    "inputPlaceholder": "xxxxxxxxxxxxxxxxxxx",
+    "inputName": "number",
+    "textButton": "Siguiente"
+  }
+]

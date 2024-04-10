@@ -1,0 +1,49 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &__image-sunglasses {
+    width: 25rem;
+    position: absolute;
+    top: 22rem;
+    right: -8rem;
+    z-index: 2;
+    transform: translateX(100%);
+    &--show {
+      animation: translateX-Y-0 1s 1 0.5s forwards;
+    }
+    &--hidden {
+      transform: translateX(0) translateY(0);
+      animation: fadeout 0.3s 1 forwards;
+    }
+    &--next-dates {
+      transform: translateX(0) translateY(0);
+      animation: next-dates-sunglasses 1s 1 forwards;
+    }
+  }
+  &__image-cap {
+    width: 30rem;
+    position: absolute;
+    bottom: 55%;
+    left: -11rem;
+    z-index: 1;
+    transform: translateY(-100%) translateX(-100%);
+    transition: all 1s;
+    &:hover {
+      scale: 1.1;
+      filter: drop-shadow(-8px 8px 11px rgba(0, 0, 0, 0.576));
+    }
+    &--show {
+      animation: cap 1.5s 0.5s 1 forwards;
+    }
+    &--hidden {
+      transform: translateX(0) translateY(0);
+      animation: fadeout 0.3s 1 forwards;
+    }
+    &--next-dates {
+      transform: translateX(0) translateY(0);
+      animation: next-dates-cap 1s 1 forwards;
+    }
+  }
+}

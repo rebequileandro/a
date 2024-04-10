@@ -1,0 +1,81 @@
+.next-dates-carousel {
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  animation: fadein 1s 1 forwards;
+  position: relative;
+
+  cursor: grab;
+  .swiper-slide {
+    width: auto;
+  }
+  .swiper {
+    overflow: visible;
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  &__next {
+    font-family: "Shadow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-right: -1rem;
+  }
+  &__dates {
+    font-family: "Shadow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-left: -1rem;
+  }
+
+  &__item {
+    width: 25rem;
+    position: relative;
+    flex-shrink: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    // border: solid 1px aqua;
+  }
+  &__mobile-wrapper {
+    border: solid 1px aqua;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+  }
+  &__mobile {
+    // border: solid 1px aqua;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    // scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+  }
+  &__background-nexdate-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    &__next-date {
+      font-family: "Shadow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5.5rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .next-dates-carousel {
+    height: 100%;
+    overflow: hidden;
+    &__item {
+      // border: solid 1px aqua;
+      width: 80%;
+    }
+  }
+}

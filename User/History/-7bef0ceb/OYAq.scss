@@ -1,0 +1,18 @@
+.especial-pizza {
+  &__fungus {
+    width: 20rem;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
+  }
+  &__slice-one {
+    width: 12rem;
+    margin-right: -1rem;
+    margin-top: 2rem;
+  }
+  &__slice-two {
+    width: 12rem;
+    transform: rotate(180deg);
+    margin-right: 6rem;
+    margin-top: -2rem;
+  }
+}

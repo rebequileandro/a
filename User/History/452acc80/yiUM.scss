@@ -1,0 +1,8 @@
+.not-found {
+  @include absolute-center;
+  @include center;
+  flex-direction: column;
+  &__animation {
+    width: 75vw;
+  }
+}

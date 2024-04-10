@@ -1,0 +1,34 @@
+@use "../../../../sass/stylesImports.scss" as styles;
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  background-color: styles.$color-secondary;
+  @include styles.flex(row, nowrap, space-between, center);
+  padding: 0 2rem;
+  &__profile-wrapper {
+    @include styles.flex(row, nowrap, center, center);
+    gap: 2rem;
+  }
+  &__profile-image-container {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    @include styles.flex(row, nowrap, center, center);
+  }
+  &__profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__profile-data {
+    &__name {
+      font-size: styles.$text-size-18;
+      color: styles.$color-tertiary;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.qr-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.8rem;
+    padding: 1.5rem;
+    width: 11.8rem;
+    height: 11.8rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: var(--gradient-primary-left-to-right);
+        mix-blend-mode: lighten;
+        border-radius: 1.8rem;
+    }
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}

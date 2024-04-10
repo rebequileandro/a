@@ -1,0 +1,105 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+:root {
+  --primary-color: #7544df;
+  --color-transparent: transparent;
+  /* button */
+  --btn-radius: 0.7em;
+  --btn-font-family: "Nunito Sans", sans-serif;
+  /* checkbox */
+  --checkbox-border-radius: 0.5rem;
+  /* toggle */
+  --radius-toggle-switch: 9rem;
+  /* input */
+  --radius-input: 0.7em;
+  --input-border-color: #d9d9d9;
+  --input-text-color: #000000;
+  --input-font: "Nunito Sans", sans-serif;
+  --input-background-color: #ffffff;
+  /* dropdown */
+  --dropdown-border-color: #d9d9d9;
+  --dropdown-background-color: #ffffff;
+  --dropdown-font: "Nunito Sans", sans-serif;
+  --dropdown-radius: 1rem;
+  /* tabs */
+  --tabs-radius-xnodui: 1.4em;
+  --tabs-border-xnodui: 1em;
+  --tabs-height-xnodui: 4.8em;
+  --tabs-speed-animation-xnodui: 0.4s;
+  --tabs-font-xnodui: "Nunito Sans", sans-serif;
+  --tabs-background-color-xnodui: var(--primary-color);
+  --tabs-background-color-checked-xnodui: #ffffff;
+  --tabs-color-text-one-xnodui: #ffffff;
+  --tabs-color-text-two-xnodui: #000000;
+}

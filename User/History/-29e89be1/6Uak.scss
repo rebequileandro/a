@@ -1,0 +1,7 @@
+.landing {
+  @include center;
+  background-color: $PRIMARY-COLOR;
+  width: 100vw;
+  height: 100vh;
+  animation: landing 1s ease 1 2.5s forwards;
+}

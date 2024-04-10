@@ -1,0 +1,30 @@
+@import '../../../sass/stylesImports.scss';
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 90vh;
+  &__title {
+    margin-top: 1.5rem;
+  }
+  &__form {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.3rem;
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+  }
+  &__save-btn {
+    position: relative;
+  }
+  &__loading-animation {
+    position: absolute;
+  }
+}

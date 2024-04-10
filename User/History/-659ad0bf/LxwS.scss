@@ -1,0 +1,17 @@
+.download-pdf-container{
+    width: 8.5rem;
+    height: 2.5rem;
+    background: var(--gradient-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    font-size: 0.68rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    img{
+        width: 0.8rem;
+    }
+}

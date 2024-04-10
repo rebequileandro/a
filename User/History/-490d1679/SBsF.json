@@ -1,0 +1,14 @@
+[
+  {
+    "image": "/assets/intro-slider/image-1.png",
+    "title": "¡Bienvenido!",
+    "subtitle": "Crea Tu Propio Caso Clínico",
+    "text": "Explora escenarios reales o hipotéticos y diseña casos clínicos a medida. ¡Desata tu creatividad y profundiza en diferentes posibilidades médicas."
+  },
+  {
+    "image": "/assets/intro-slider/image-2.png",
+    "title": "¡Ademas!",
+    "subtitle": "Diseña Escenarios Clínicos",
+    "text": "Explora diversas opciones y prueba caminos alternativos. Completa el prompt con detalles específicos para obtener un feedback detallado y preciso sobre tu caso clínico."
+  }
+]

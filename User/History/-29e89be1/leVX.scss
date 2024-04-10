@@ -1,0 +1,8 @@
+.landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% 50%);
+  animation: landing 1s ease 1 2.5s forwards;
+  border: solid 1px aqua;
+}

@@ -1,0 +1,69 @@
+import "./InputDiv.scss";
+
+import eye from "../../../assets/icons/icon_eye.svg";
+import eyeCrossed from "../../assets/icons/icon_eye-crossed.svg";
+import { useState } from "react";
+
+function InputDiv({
+  inputProps,
+  label,
+  setState,
+  error,
+  onBlur,
+  style,
+  onChange,
+  textarea,
+  className,
+}) {
+  const [inputType, setInputType] = useState(inputProps.type);
+
+  const handleChange = (e) => {
+    setState(e.target.value);
+    if (onChange) {
+      onChange();
+    }
+  };
+
+  const isPassword = inputProps.type === "password";
+
+  const togglePasswordType = () => {
+    if (inputType === "password") {
+      setInputType("text");
+    } else {
+      setInputType("password");
+    }
+  };
+
+  return (
+    <div className={error ? "input-div error " : "input-div "}>
+      <label htmlFor={inputProps.name}>{label}</label>
+
+      <div className="input-wrapper" style={style ? style : null}>
+        {textarea ? (
+          <textarea {...inputProps} onChange={handleChange} onBlur={onBlur} />
+        ) : (
+          <input
+            {...inputProps}
+            type={inputType}
+            onChange={handleChange}
+            onBlur={onBlur}
+          />
+        )}
+
+        {isPassword && (
+          <div className="toggle-password" onClick={togglePasswordType}>
+            {inputType === "password" ? (
+              <img src={eyeCrossed} />
+            ) : (
+              <img src={eye} />
+            )}
+          </div>
+        )}
+      </div>
+
+      {error && <p className="error">*{error}</p>}
+    </div>
+  );
+}
+
+export default InputDiv;

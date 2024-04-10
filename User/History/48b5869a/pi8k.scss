@@ -1,0 +1,350 @@
+@import '../../../../sass/stylesImports.scss';
+.edit-product-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  @include app-gradient-dark-bg;
+  z-index: 6;
+
+  .edit-popup-size {
+    width: 90%;
+    height: 95vh;
+    position: relative;
+  }
+  .edit-popup {
+    width: 100%;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    margin-top: 6rem;
+    animation: popup 0.2s 1 forwards;
+    position: absolute;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .popup-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: $text-size-12;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .product-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-pack-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    img.pack-image-edit:first-child {
+      margin-right: -6.8rem;
+      margin-left: -2rem;
+    }
+    img.pack-image-edit:last-child {
+      margin-left: -3.8rem;
+    }
+    img.pack-image-edit:not(:first-child, :last-child) {
+      margin-right: -6.9rem;
+      margin-left: -3.9rem;
+    }
+  }
+  .product-label {
+    font-weight: 400;
+    font-size: $text-size-14;
+    margin-top: 1rem;
+    text-transform: capitalize;
+  }
+  .product-label-ml {
+    font-weight: 400;
+    font-size: $text-size-14;
+    margin-top: 1rem;
+  }
+  .product-bottle {
+    @include primary-gradient-dark-txt--animated;
+    font-weight: 500;
+    font-size: $text-size-12;
+    text-transform: capitalize;
+    top: 85px;
+    position: absolute;
+    left: 7px;
+  }
+  .recipe-title {
+    margin-top: 2rem;
+  }
+  .input-wrapper {
+    &--width {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    &--width-ml {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    &--width-capacity {
+      width: 50%;
+      margin: 1rem 0;
+    }
+    &--width-time {
+      width: 50%;
+      margin: 1rem 0;
+    }
+    &__text-absolute {
+      position: absolute;
+      font-weight: 400;
+      font-size: 1.4rem;
+      top: 1.2rem;
+      right: 1.4rem;
+    }
+    &__eraseIcon {
+      position: absolute;
+      width: 1.7rem;
+      height: 1.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1.5rem;
+    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include primary-gradient-dark-bg;
+    padding: 0.2rem;
+    border-radius: 3rem;
+    width: 100%;
+    margin: 0.8rem 0rem 0rem 0rem;
+
+    input {
+      width: 100%;
+      height: 4rem;
+      background-color: $searchBar-background;
+      border: none;
+      border-radius: 3rem;
+      color: white;
+      padding-left: 1.3rem;
+      padding-right: 3.5rem;
+      // padding-top: 0.3rem;
+
+      font-weight: 300;
+      font-size: $text-size-14;
+      text-transform: capitalize;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:focus {
+        outline: none;
+      }
+    }
+    input:last-child {
+      padding-right: 0;
+    }
+    .price {
+      position: absolute;
+      left: -1.3rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+    .discount {
+      position: absolute;
+      left: -1.5rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+  }
+  .right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: $text-size-16;
+      text-transform: uppercase;
+    }
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    .input {
+      &__price {
+      }
+      &__discount {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        &__symbol {
+          font-size: $text-size-16;
+        }
+      }
+    }
+  }
+  .status {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    p {
+      font-weight: 300;
+      font-size: $text-size-12;
+    }
+  }
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-container {
+    width: 30%;
+    margin-top: 1rem;
+    &__price {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      font-size: $text-size-14;
+      font-weight: 500;
+    }
+    label {
+      font-weight: 400;
+      font-size: $text-size-14;
+    }
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .save {
+    width: 100%;
+    height: 5rem;
+    border-radius: 6.25rem;
+    @include primary-gradient-dark-bg;
+    box-shadow: 0px 0px 20px rgba(255, 84, 123, 0.5);
+    color: white;
+    font-size: $text-size-14;
+    margin-top: 4rem;
+    font-weight: 600;
+  }
+  .buttons-container.save-packs {
+    margin-top: 1rem;
+  }
+  .close {
+    border-radius: 50%;
+    align-self: center;
+    color: white;
+    font-size: $text-size-14;
+    margin-top: 2rem;
+    text-decoration: underline;
+  }
+  .remove {
+    color: white;
+    text-decoration: underline;
+    margin-top: 2rem;
+    font-size: small;
+  }
+}
+
+.dropdown-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 5%;
+  margin-bottom: 2rem;
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+  &__ml {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+}
+
+.dropdown-section-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+
+  &__capacity {
+    @extend .dropdown-section__product;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__minutes {
+    @extend .dropdown-section__ml;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.dropdown-options-recipe {
+  position: absolute;
+
+  width: 65%;
+  z-index: 2;
+  top: 6rem;
+  @include app-gradient-dark-bg;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  &__option {
+    flex-direction: column;
+    @include grey-gradient-bg;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $text-size-12;
+    font-weight: 500;
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+
+  &__option:first-child {
+    padding-top: 2rem;
+    height: 7rem;
+  }
+}
+
+.pink-gradient-line-custom {
+  height: 2px;
+  width: 100%;
+  @include primary-gradient-dark-bg;
+}
+.pink-gradient-line-custom:last-child {
+  margin-bottom: 2rem;
+}

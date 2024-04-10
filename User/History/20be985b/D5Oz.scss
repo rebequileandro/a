@@ -1,0 +1,63 @@
+.c2023 {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  overflow: hidden;
+  // border: solid 1px aqua;
+
+  &__image {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+  &__calendar {
+    position: absolute;
+    top: 22%;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    button {
+      color: #ffffff;
+    }
+  }
+  .calendar {
+    row-gap: 0;
+    &__month {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &__day {
+      font-weight: 700;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .c2023 {
+    &__calendar {
+      top: 20%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .c2023 {
+    height: auto;
+    width: 85%;
+    &__image {
+      width: 100%;
+    }
+    &__calendar {
+      top: 22%;
+      width: 70%;
+    }
+    .calendar {
+      &__month {
+        font-size: 1.8rem;
+      }
+      &__day {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

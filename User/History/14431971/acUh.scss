@@ -1,0 +1,13 @@
+.section-one {
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    width: 20rem;
+    img {
+      width: 100%;
+    }
+  }
+}

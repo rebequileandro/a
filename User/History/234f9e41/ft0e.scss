@@ -1,0 +1,16 @@
+.container-back{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    h1{
+        font-family: 'Acumin Pro Wide';
+        text-transform: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    img{
+        cursor: pointer;
+
+    }
+}

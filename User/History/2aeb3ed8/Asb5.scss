@@ -1,0 +1,185 @@
+@import "../../global/css/mixins.scss";
+
+.shooza-information-container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(104, 30, 242, 0.1232) 38.37%,
+      rgba(103, 30, 242, 0) 101.33%
+    ),
+    url("../../assets/young-multiracial-people-dancing-and-celebrating-w-2021-12-09-06-22-24-utc\ 1.png");
+  background-size: cover;
+  background-position: 100% 100%;
+  overflow: hidden;
+  @include flexible(flex, row, nowrap, flex-start, center);
+
+  @include responsive(1240px) {
+    background-position: 50% 50%;
+  }
+
+  @include responsive(640px) {
+    @include flexible(flex, row, nowrap, center, center);
+  }
+
+  @include responsive(400px) {
+    background-position: 60% 90%;
+  }
+
+  .black-bar-footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #040404;
+    position: absolute;
+    z-index: 3;
+    clip-path: polygon(0 93%, 100% 84%, 100% 100%, 0% 100%, 0 100%);
+    bottom: 0;
+  }
+
+  .left-section {
+    margin: 0 0 0 7.188rem;
+    width: 90%;
+    height: 24.5rem;
+    position: absolute;
+    z-index: 3;
+
+    @include flexible(flex, column, nowrap, space-between, flex-start);
+
+    @include responsive(1240px) {
+      height: 22rem;
+    }
+
+    @include responsive(830px) {
+      width: 70%;
+      height: 21.188rem;
+    }
+
+    @include responsive(640px) {
+      width: 90%;
+      height: 21.188rem;
+      margin: 0 0 0 0;
+    }
+
+    @include responsive(470px) {
+      width: 90%;
+      height: 26rem;
+      box-sizing: border-box;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    @include responsive(362px) {
+      height: 26rem;
+    }
+
+    .icono-shooza {
+      width: 5.688rem;
+      height: 5.688rem;
+
+      @include responsive(1240px) {
+        width: 3.688rem;
+        height: 3.688rem;
+      }
+    }
+    &__title {
+      font-family: "Monument Extended";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 2.7rem;
+
+      @include responsive(1240px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      width: 75%;
+
+      @include responsive(1240px) {
+        font-size: 1.2rem;
+      }
+
+      @include responsive(500px) {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      @include flexible(flex, row, nowrap, center, center);
+      width: 13.5rem;
+      @include responsive(500px) {
+        align-self: center;
+        width: 90%;
+      }
+    }
+  }
+  .ellipse.one {
+    right: 20%;
+    bottom: 20%;
+    @include responsive(992px) {
+      width: 9.75rem;
+      height: 9.75rem;
+      top: 5%;
+      left: 15%;
+    }
+  }
+  .ellipse.two {
+    width: 4.4rem;
+    height: 4.4rem;
+    top: 45%;
+    right: 30%;
+    @include responsive(992px) {
+      width: 3.25rem;
+      height: 3.25rem;
+      right: 100%;
+    }
+  }
+  .ellipse.three {
+    width: 3rem;
+    height: 3rem;
+    right: 10%;
+    bottom: 20%;
+    @include responsive(992px) {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+  .ellipse-pink.one {
+    right: 5%;
+    top: 15%;
+    @include responsive(992px) {
+      width: 9.75rem;
+      height: 9.75rem;
+      top: 30%;
+      right: 20%;
+    }
+  }
+  .ellipse-pink.two {
+    width: 4.4rem;
+    height: 4.4rem;
+    right: 20%;
+    top: 5%;
+    @include responsive(992px) {
+      width: 3.25rem;
+      height: 3.25rem;
+      left: auto;
+      bottom: 30%;
+      left: 20%;
+    }
+  }
+  .ellipse-pink.three {
+    width: 3rem;
+    height: 3rem;
+    right: 15%;
+    top: 40%;
+    @include responsive(992px) {
+      width: 2.25rem;
+      height: 2.25rem;
+      top: auto;
+      bottom: 30%;
+      left: -1%;
+    }
+  }
+}

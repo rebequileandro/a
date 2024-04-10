@@ -1,0 +1,33 @@
+@use "../../../../sass/stylesImports" as styles;
+
+.bzrp-tour-item {
+  height: 6rem;
+  width: 50%;
+  @include styles.flex-config(flex, space-between, center, row, nowrap);
+
+  &__underline {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+  }
+  &__location {
+    @include styles.flex-config(flex, center, center, row, nowrap);
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  &__button-container {
+    @include styles.flex-config(flex, center, center, row, nowrap);
+    gap: 1rem;
+  }
+  &__edit-btn {
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__btn {
+    width: 8rem;
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.profile-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-left:  7.62rem;
+    .profile-info{
+        width: 375px;
+        height: 321px;
+        border-radius: 20px;
+        background: var(--gradient-secondary);
+    }
+    .row-content{
+        height: 4rem;
+        width: 85%;
+    }
+    hr{
+        border: none;
+        height: 1px;
+        width: 100%;
+        background: var(--gradient-primary);
+    }
+}

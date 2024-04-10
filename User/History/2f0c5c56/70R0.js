@@ -1,0 +1,3 @@
+const TABLE_STAGES = {
+
+}

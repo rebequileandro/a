@@ -1,0 +1,20 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $typography-primary;
+}
+
+.heading-primary {
+  /*h1*/
+  color: $typography-primary;
+  font-family: "Montserrat", sans-serif;
+
+  &--main {
+    color: $color-secondary;
+    font-size: $heading-size-44;
+    font-weight: 800;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "login": [
+    {
+      "label": "Usuario:",
+      "type": "text"
+    },
+    {
+      "label": "Contraseña:",
+      "type": "text"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+REACT_APP_API=https://api.wedrinkapp.com/api
+REACT_APP_SOCKET=https://api.wedrinkapp.com/
+REACT_APP_MP_CLIENT_ID=1228194246381160
+REACT_APP_MP_CLIENT_SECRET=SvGgcyQ9n66TC0C4b9cMRinwaSH043lD
+REACT_APP_MP_REDIRECT="https://wedrinkapp.com/mis-locales"
+REACT_APP_PUBLIC_VAPID_KEY=BDC4iePqrUk_VFUtJVRdka_VJNbBl_1dEFMLi2RPzlBekzh-L_EujNH_FiLNl3mayGrWKnxsiN0BHdd9l7y5Z3c

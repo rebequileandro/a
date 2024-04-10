@@ -1,0 +1,21 @@
+.audioplayerpopup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(14, 13, 13, 0.7);
+  //   backdrop-filter: blur(1rem);
+  top: 0;
+  left: 0;
+  z-index: 9;
+  &__popup {
+    position: relative;
+    &__cancel {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+  }
+}

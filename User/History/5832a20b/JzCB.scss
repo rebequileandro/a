@@ -1,0 +1,9 @@
+@import './index.scss';
+
+.App{
+    aspect-ratio: 960/540;
+    background-image: url('./assets/desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

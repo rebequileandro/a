@@ -1,0 +1,7 @@
+@use "../../sass/stylesImports" as styles;
+
+.bzrp-tour {
+  width: 100%;
+  border: solid 1px aqua;
+  @include styles.flex-config(flex, center, center, column, nowrap);
+}

@@ -1,0 +1,24 @@
+.overlay-type-of-drink{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.62rem);
+    z-index: 2;
+
+    .popup{
+        width: 90%;
+        top: 20%;
+        height: 21.3rem;
+        background: var(--gradient-secondary);
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+        h2{
+            margin-top: 1.5rem       ;
+        }
+    }
+}

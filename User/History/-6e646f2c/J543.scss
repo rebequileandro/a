@@ -1,0 +1,30 @@
+.audioplayerpopup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(14, 13, 13, 0.7);
+  //   backdrop-filter: blur(1rem);
+  top: 0;
+  left: 0;
+  z-index: 9;
+  &__popup {
+    position: relative;
+    border: solid 1px aqua;
+    &__cancel {
+      position: absolute;
+      top: 0;
+      right: 0.5rem;
+      color: black;
+      z-index: 2;
+      //   border: solid 1px aqua;
+      width: 1rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

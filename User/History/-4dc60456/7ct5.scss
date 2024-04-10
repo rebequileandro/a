@@ -1,0 +1,169 @@
+@import '../../../sass/stylesImports.scss';
+
+.layout-home-fiestero {
+  width: auto;
+  margin: 0 2rem;
+}
+.section-welcome-fiestero {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  &__title {
+    font-family: 'Acumin Pro Wide';
+    font-weight: 400;
+    font-size: $text-size-16;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    &__welcome {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__image--container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-radius: 2rem;
+    height: 11rem;
+    overflow: hidden;
+    h2 {
+      position: absolute;
+
+      width: 80%;
+      z-index: 3;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'rajdhani';
+      font-weight: 700;
+      font-size: $heading-size-24;
+      line-height: 3rem;
+    }
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+  }
+}
+.section-recommended-events {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2rem;
+  &__header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  &__card-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+.section-history-events {
+  &__header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  &__card-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+  }
+}
+.events-discounts-container {
+  @include grey-gradient-bg;
+  height: 25rem;
+  width: 100%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__partOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    h2 {
+      margin: 1.5rem 0;
+    }
+    &__card-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      overflow-x: auto;
+      padding: 0.1rem;
+    }
+  }
+
+  &__line-break {
+    display: block;
+
+    width: 100%;
+    border-bottom: none;
+    position: relative;
+  }
+  &__line-break::after {
+    content: '';
+    @include grey-gradient-bg;
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  &__partTwo {
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &__textNav {
+      margin-left: 2rem;
+      @include primary-gradient-light-txt;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: $text-size-16;
+    }
+    &__arrow {
+      height: 1.4rem;
+      margin-right: 2rem;
+    }
+  }
+}
+.section-title {
+  font-family: 'Acumin Pro Wide';
+  font-weight: 600;
+  font-size: $text-size-16;
+}
+.ver-mas-link {
+  margin-top: -0.8rem;
+  a {
+    position: relative;
+    font-size: $text-size-14;
+    cursor: pointer;
+    @include primary-gradient-light-txt;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 0.063rem;
+    @include primary-gradient-dark-bg;
+  }
+}

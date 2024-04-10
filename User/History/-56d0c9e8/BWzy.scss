@@ -1,0 +1,102 @@
+@import '../../global/css/mixins.scss';
+
+.we-drink-pros-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #040404;
+    @include flexible(flex, row, nowrap, center, center);
+    @include responsive(996px){ 
+        height: 100%;
+    }
+
+    .info-wrapper{
+        width: 80%;
+       
+        @include flexible(flex, row, wrap, space-between, space-between);
+        @include responsive(1040px){ 
+            @include flexible(flex, row, wrap, space-around, space-between);
+            
+        }
+        @include responsive(996px){ 
+            height: 100%;
+            @include flexible(flex, column, wrap, center, center);
+        }
+        @include responsive(890px) {
+            width: 100%;
+        }
+        
+        
+        article {
+            
+            box-sizing: border-box;
+            height: 13rem;
+            width: 32%;
+            margin-bottom: 3.438rem;
+            @include flexible(flex, column, wrap, flex-start, flex-start);
+            @include responsive(1240px){ 
+                height: 12rem;
+                margin-bottom: 2rem;
+            }
+            @include responsive(1040px){ 
+                width: 40%;
+            }
+
+            @include responsive(690px){
+                width: 60%;
+            }
+            @include responsive(426px){
+                width: 80%;
+            }
+            
+
+            img {
+                
+                // width: 2.688rem;
+                // height: 2.688rem;
+                width: 3rem;
+                height: 3rem;
+                margin-bottom: 0.9rem;
+            }
+
+            .h2-info{
+           
+
+                font-size: 1.438rem;
+                margin-bottom: 0.9rem;
+                @include responsive(1240px){ 
+                    font-size: 1.200rem;
+                }
+            }
+            .p-info{
+                
+                width: 92%;
+                font-size: 1.438rem;
+                @include responsive(1240px){ 
+                    font-size: 1rem;
+                }
+            }
+            .btn{
+                margin-bottom: 0.9rem;
+                width: 13.5rem;
+                height: 2.5rem;
+            }
+            .info-link{
+                text-decoration: none;
+                position: relative;
+                cursor: pointer;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 80%;
+                    width: 100%;
+                    height: 0.063rem;
+                    background: var(--gradient-primary);
+                  }
+            }
+        }
+    }
+}

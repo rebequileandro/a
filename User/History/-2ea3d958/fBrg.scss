@@ -1,0 +1,60 @@
+@import '../../../sass/main.scss';
+.activities {
+  width: 85%;
+  margin: 0 auto;
+
+  &__container {
+    background: var(--gradient-secondary);
+    border-radius: 2rem;
+    padding: 1rem 1rem 0;
+  }
+  &__row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    height: 7rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  &__club {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__divider {
+    margin: 25px 0 10px;
+  }
+  &__date {
+    font-size: 13px;
+    color: #bdbdbd;
+  }
+  &__content {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__value-container {
+    height: 4rem;
+  }
+  &__price {
+    font-size: $text-size-12;
+  }
+  &__line {
+    border: none;
+    height: 1px;
+    @include primary-gradient-light-bg();
+  }
+}

@@ -1,0 +1,12 @@
+.section-three {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  &__side-container {
+    border: 1px solid aqua;
+    transform: rotate(-90deg);
+    width: 100vw;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../sass/stylesImports.scss";
+
+.input-wrapper {
+  // @include primary-gradient-dark-bg;
+
+  border-radius: 1.8rem;
+
+  display: inline-block;
+  position: relative;
+  border-radius: 8px; /* Agrega el valor de border-radius deseado */
+  overflow: hidden;
+  &__input {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.2
+    ); /* Color de fondo con transparencia */
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.input-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    #ff6689,
+    #e066ff
+  ); /* Gradiente de color */
+  mask-image: linear-gradient(to right, transparent, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    transparent
+  ); /* Para compatibilidad con WebKit */
+}

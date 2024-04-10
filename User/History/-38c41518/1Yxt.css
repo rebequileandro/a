@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+textarea {
+  width: 50%;
+  height: 20rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}

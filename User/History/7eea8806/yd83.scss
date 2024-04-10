@@ -1,0 +1,36 @@
+.edit-popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #00000051;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__close-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  &__container {
+    width: 60%;
+    height: 70%;
+    background-color: #cbcbcba3;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

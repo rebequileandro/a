@@ -1,0 +1,34 @@
+@use "../../sass/stylesImports.scss" as styles;
+.home {
+  background-color: #fcfcfd;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  padding: 9rem 0rem;
+  &__form {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include styles.flex(row, nowrap, space-between, end);
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: styles.$color-secondary;
+    -webkit-box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.21);
+    .btn {
+      width: 6rem;
+      height: 5rem;
+      padding: 1rem;
+      @include styles.flex(row, nowrap, center, center);
+    }
+    &__btn {
+      &--send-img {
+        width: 80%;
+      }
+      &--rec-img {
+        width: 60%;
+      }
+    }
+  }
+}

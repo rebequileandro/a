@@ -1,0 +1,17 @@
+.entree {
+  &__cob {
+    width: 20rem;
+  }
+  &__cheese {
+    width: 20rem;
+  }
+  &__image-container {
+    width: 100%;
+    &--right {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4rem;
+    }
+  }
+}

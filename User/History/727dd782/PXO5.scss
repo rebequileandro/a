@@ -1,0 +1,113 @@
+@import '../../../../../sass/stylesImports.scss';
+.popup-select-drink-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  // backdrop-filter: blur(0.62rem);
+  background: linear-gradient(
+    180deg,
+    rgba(7, 1, 4, 0.438) 0%,
+    rgba(70, 5, 56, 0.5) 100%
+  );
+  z-index: 999;
+
+  .popup-select-drink {
+    width: 90%;
+    height: 75vh;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(
+      207.64deg,
+      rgba(255, 255, 255, 0.6) -13.25%,
+      rgba(255, 255, 255, 0) 114.31%
+    );
+    transform: translateY(150%);
+    animation: slide 0.2s 1 forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      margin-top: 0.6rem;
+
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    .container-select-cards {
+      margin-top: 2rem;
+      width: 95%;
+      height: 73%;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll;
+      gap: 1rem;
+      padding-top: 0.5rem;
+      position: relative;
+      .create-pack {
+        position: fixed;
+        top: 75%;
+        background-color: #a69a9c;
+      }
+    }
+    .sub-title {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      justify-content: center;
+      width: 100%;
+      gap: 0.5rem;
+      .line {
+        width: 20%;
+        height: 1px;
+        background-color: white;
+      }
+    }
+    .add-drink-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: -1rem;
+    }
+    .save {
+      width: 16rem;
+      height: 4rem;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: white;
+      @include primary-gradient-dark-bg;
+      box-shadow: 0px 0px 20px rgba(255, 84, 123, 0.5);
+      border-radius: 6.25rem;
+    }
+    .create {
+      width: 8.8rem;
+      min-height: 2.5rem;
+      color: white;
+      background: var(--gradient-tertiary);
+      box-shadow: 0px 0px 20px rgba(255, 84, 123, 0.5);
+      border-radius: 6.25rem;
+    }
+    .cancel {
+      font-size: 1.2rem;
+      text-decoration: underline;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateY(0%);
+  }
+}

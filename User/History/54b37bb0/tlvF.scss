@@ -1,0 +1,12 @@
+@use '../../../../sass/stylesImports.scss' as styles;
+.edit-food {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  @include styles.app-gradient-dark-bg;
+  z-index: 6;
+}

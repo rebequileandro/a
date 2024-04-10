@@ -1,0 +1,7 @@
+.landing {
+  @include absolute-center;
+  animation: landing 1s ease 1 2.5s forwards;
+  &__icon {
+    animation: fade-out 3.5s 1 forwards;
+  }
+}

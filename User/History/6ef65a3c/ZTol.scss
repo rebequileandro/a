@@ -1,0 +1,71 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.party-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 2rem;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  &__title {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      border: none;
+      height: 1.5rem;
+      border-radius: 0.3rem;
+    }
+    &__create-bars {
+      &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    &__category {
+      input {
+        appearance: radio;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__buttons-container {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  .btn-show-password {
+    border: solid 1px white;
+    height: 2rem;
+    border-radius: 0.3rem;
+  }
+}
+@media (max-width: 820px) {
+  .party-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

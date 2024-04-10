@@ -1,0 +1,76 @@
+.video-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border: solid 1px aqua;
+  position: relative;
+  // height: 0; /* Establece la altura inicial del contenedor a 0 */
+  // padding-bottom: 56.25%;
+
+  &__light-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &__light {
+    filter: blur(80px) opacity(0.6) saturate(300%);
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: scale(1.2) translateZ(0);
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+  }
+  &__video {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    // height: 100%;
+    // object-fit: cover;
+  }
+  &__button {
+    position: absolute;
+    z-index: 9999;
+    width: 5rem;
+    left: 50%;
+    top: 50%;
+    &--play {
+    }
+  }
+
+  .video-js {
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  // /* Change all text and icon colors in the player. */
+  // .vjs-matrix.video-js {
+  //   // color: #0cb1b1;
+  // }
+
+  // /* Change the border of the big play button. */
+  // .vjs-matrix .vjs-big-play-button {
+  //   // border-color: #0cb1b1e1;
+  // }
+
+  /* Change the color of various "bars". */
+  .vjs-matrix .vjs-volume-level,
+  .vjs-matrix .vjs-play-progress,
+  .vjs-matrix .vjs-slider-bar {
+    background: #0cb1b1;
+  }
+  .vjs-control-bar {
+    background-color: rgba(0, 0, 0, 0.24) !important;
+    z-index: 999;
+  }
+  .video-js .vjs-big-play-button {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,11 @@
+.new-password-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .gradient-box{
+        height: 10rem;
+        width: 90%;
+        border-radius: 1.25rem;
+        background: var(--gradient-secondary);
+    }
+}

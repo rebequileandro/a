@@ -1,0 +1,31 @@
+.header{
+    .gradient-text {
+        font-family: 'Acumin Pro Wide';
+        font-style: normal;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 1rem;
+        background: var(--gradient-tertiary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 1rem;
+    }
+    .party{
+        display: flex;
+        align-items: baseline;
+        gap: .5rem;
+        h2{
+            text-transform: none;
+        }
+        p{
+            font-size: .7rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+        }
+    }
+}

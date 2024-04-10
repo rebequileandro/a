@@ -1,0 +1,136 @@
+{
+  "entradas": [
+    {
+      "name": "Empanada de carne",
+      "price": 310
+    },
+    {
+      "name": "Empanada de jamón y queso",
+      "price": 600
+    },
+    {
+      "name": "Queso provolone",
+      "price": 700
+    },
+    {
+      "name": "Buñuelos de acelga",
+      "price": 800
+    },
+    {
+      "name": "Bastones de queso",
+      "price": 600
+    },
+    {
+      "name": "Rabas con salsa tártara",
+      "price": 900
+    }
+  ],
+  "parrilla": [
+    {
+      "name": "Bife de chorizo",
+      "price": 1800
+    },
+    {
+      "name": "Medallón de lomo",
+      "price": 2900
+    },
+    {
+      "name": "Entraña",
+      "price": 1900
+    },
+    {
+      "name": "Vacío",
+      "price": 1500
+    },
+    {
+      "name": "Chorizo",
+      "price": 800
+    },
+    {
+      "name": "Morcilla",
+      "price": 800
+    }
+  ],
+  "guarniciones": [
+    {
+      "name": "Papas fritas",
+      "price": 800
+    },
+    {
+      "name": "Puré de papas",
+      "price": 800
+    },
+    {
+      "name": "Puré de calabaza",
+      "price": 800
+    },
+    {
+      "name": "Arroz con vegetales",
+      "price": 900
+    },
+    {
+      "name": "Ensalada de lechuga y tomate",
+      "price": 900
+    },
+    {
+      "name": "Ensalada de rúcula y queso",
+      "price": 900
+    },
+    {
+      "name": "Espinacas a la crema",
+      "price": 900
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Flan casero",
+      "price": 400
+    },
+    {
+      "name": "Panqueque con dulce de leche",
+      "price": 400
+    },
+    {
+      "name": "Volcán de chocolate",
+      "price": 500
+    },
+    {
+      "name": "Bocha de helado",
+      "price": 700
+    },
+    {
+      "name": "Almendrado",
+      "price": 500
+    },
+    {
+      "name": "Torta de chocolate",
+      "price": 700
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Agua sin gas",
+      "price": 400
+    },
+    {
+      "name": "Agua con gas",
+      "price": 500
+    },
+    {
+      "name": "Gaseosa",
+      "price": 600
+    },
+    {
+      "name": "Cerveza",
+      "price": 500
+    },
+    {
+      "name": "Vino tinto",
+      "price": 1500
+    },
+    {
+      "name": "Vino blanco",
+      "price": 1500
+    }
+  ]
+}

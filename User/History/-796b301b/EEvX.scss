@@ -1,0 +1,32 @@
+@use "../../sass/stylesImports.scss" as styles;
+
+.input-wrapper {
+  background-color: styles.$color-primary;
+  width: 100%;
+  height: 5.5rem;
+  border-radius: 3rem;
+  padding: 0rem 2.5rem 0rem 6rem;
+  vertical-align: bottom;
+  &__label-input {
+    height: 100%;
+    @include styles.flex(column, nowrap, center, start);
+  }
+  &__input {
+    background-color: transparent;
+    color: styles.$color-secondary;
+    font-size: styles.$text-size-14;
+    // height: 2rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #ffffffa9;
+    }
+  }
+  &__label {
+    font-size: styles.$text-size-14;
+    color: #ffffffa9;
+  }
+}

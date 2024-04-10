@@ -1,0 +1,92 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+:root {
+  --primary-color: #7544df;
+  --color-transparent: transparent;
+  /* button */
+  --btn-radius: 1rem;
+  --btn-font-family: "Nunito Sans", sans-serif;
+  /* checkbox */
+  --checkbox-border-radius: 0.5rem;
+  /* toggle */
+  --radius-toggle-switch: 9rem;
+  /* input */
+  --radius-input: 1rem;
+  --background-color-input: var(--color-transparent);
+  --input-border-color: #d9d9d9;
+  --input-text-color: #000000;
+  --input-font: "Nunito Sans", sans-serif;
+  /* dropdown */
+  --dropdown-border-color: #d9d9d9;
+}

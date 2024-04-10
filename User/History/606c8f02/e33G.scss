@@ -1,0 +1,42 @@
+@import '../../../../sass/stylesImports.scss';
+.payment-method-settings {
+  padding-bottom: 2rem;
+  &__sub-title {
+    margin-bottom: 0.3rem;
+    margin-top: 2.5rem;
+  }
+  &__my-cards {
+    div.payment-method-short-card:not(:last-child) {
+      margin-bottom: -0.4rem;
+    }
+  }
+  &__last-movements {
+    @include grey-gradient-bg;
+    width: 100%;
+    min-height: 5.8rem;
+    border-radius: 1.1rem;
+    &__row {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3rem;
+      gap: 1rem;
+      p {
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+    &__detail {
+      border: solid 1px aqua;
+      max-height: 90%;
+      width: 70%;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+      }
+    }
+  }
+}

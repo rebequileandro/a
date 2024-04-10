@@ -1,0 +1,19 @@
+@import '../../../../sass/stylesImports.scss';
+.login-page {
+  padding: 50px 0 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__logo {
+    width: 130px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .primary-switch {
+    margin-bottom: 60px;
+  }
+}

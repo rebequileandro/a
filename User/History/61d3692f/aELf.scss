@@ -1,0 +1,58 @@
+.exclusive-material {
+  position: relative;
+
+  z-index: 2;
+  &__link {
+    display: inline-block;
+    transition: all 0.8s;
+    color: black;
+    &:hover {
+      transform: rotate(-5.2deg) scale(1.1);
+      filter: drop-shadow(-8px 8px 11px #00000093);
+    }
+  }
+  &__image {
+    width: 22.6vw;
+  }
+  &__text {
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    font-family: "Shadow";
+    color: #000000;
+    font-weight: 400;
+    text-shadow: 0px 0px 0px #000000;
+    transform: rotate(-13deg);
+  }
+}
+
+@media (max-width: 820px) {
+  .exclusive-material {
+    left: -3rem;
+
+    &__image {
+      width: 35vw;
+    }
+    &__text {
+      font-size: 2.4vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .exclusive-material {
+    left: -4rem;
+    bottom: 12%;
+
+    &__image {
+      width: 45vw;
+    }
+    &__text {
+      font-size: 3vw;
+    }
+  }
+}

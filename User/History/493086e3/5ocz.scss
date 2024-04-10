@@ -1,0 +1,71 @@
+.popup-select-drink{
+    width: 90%;
+    height: 39.75rem;
+    border-radius: 2rem;
+    background: linear-gradient(207.64deg, rgba(255, 255, 255, 0.6) -13.25%, rgba(255, 255, 255, 0) 114.31%);
+    transform: translateY(150%);
+    animation: slide 0.2s 1 forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    h1{
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    p{
+        margin-top: .6rem;
+        font-weight: 400;
+        font-size: 0.68rem;
+    }
+    .search-container{
+        width: 80%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+        padding: 0.063rem;
+        background: var(--gradient-primary);
+        border-radius: 1.5rem;
+        .search{
+            width: 100%;
+            height: 1.8rem;
+            border-radius: 1.5rem;
+            border: none;
+            background-color: #a69a9c;
+            padding-left: 15%;
+            padding-right: 3%;
+            color: white;
+            &:focus{
+                outline: 0px;
+            }
+        }
+        img{
+            position: absolute;
+            left: 5%;
+        }
+    }
+    .container-select-cards{
+        margin-top: 1rem;
+        width: 95%;
+        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        gap: 1rem;
+        padding-top: .5rem;
+    }
+    @keyframes slide {
+        to{
+            transform: translateY(0%);
+        }
+    }
+}
+.card-select{
+    width: 100%;
+    min-height: 5.56rem;
+    background: var(--gradient-secondary);
+    border-radius: 0.68rem;
+}

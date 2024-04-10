@@ -1,0 +1,18 @@
+.statistics-details-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .statistics-header{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+        top: 10rem;
+        .buttons{
+            display: flex;
+        }
+    }
+
+}

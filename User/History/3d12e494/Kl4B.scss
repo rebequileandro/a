@@ -1,0 +1,32 @@
+.gradient-border {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 95%;
+  height: 6rem;
+  @include grey-gradient-bg;
+  border-radius: 2rem;
+
+  &--green {
+    // border: 2px solid;
+    background-color: #200218;
+  }
+  &--green:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+    margin: -2px;
+    border-radius: 2rem;
+    background: linear-gradient(
+      to right,
+      $color-green-dark-1,
+      $color-green-dark-2
+    );
+  }
+}

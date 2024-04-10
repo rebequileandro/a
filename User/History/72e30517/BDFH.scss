@@ -1,0 +1,12 @@
+.home {
+  width: 100%;
+  height: calc(100% - 0.7rem);
+  padding: 3rem 0;
+  overflow-y: scroll;
+  border: solid 1px orange;
+  // overflow-x: visible;
+  &__spacer {
+    height: 3rem;
+    width: 100%;
+  }
+}

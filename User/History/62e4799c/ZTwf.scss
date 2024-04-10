@@ -1,0 +1,4 @@
+.about-me {
+  @include limits(100vw, 100vh);
+  border: solid 1px aqua;
+}

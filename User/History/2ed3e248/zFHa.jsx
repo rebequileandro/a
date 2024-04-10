@@ -1,0 +1,19 @@
+import React from "react";
+import "./profile.scss";
+import { currentUser } from "@/store/slice/user.slice";
+import { useSelector } from "react-redux";
+
+const Profile = () => {
+  //   const user = useSelector(currentUser);
+  const user = {
+    fullName: "John Doe",
+  };
+
+  return (
+    <div className="profile">
+      <h2 className="heading-primary">Dr. {user?.fullName}</h2>
+    </div>
+  );
+};
+
+export default Profile;

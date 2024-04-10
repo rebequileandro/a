@@ -1,0 +1,6 @@
+.input-element {
+  border-bottom: solid 2px white;
+  &:focus {
+    outline: none;
+  }
+}

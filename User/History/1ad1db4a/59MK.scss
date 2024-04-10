@@ -1,0 +1,22 @@
+.promotions{
+    width: 19.375rem;
+    .promotions-header{
+        display: flex;
+        align-items: flex-end;
+        gap: .5rem;
+
+        h2{
+            font-family: 'Acumin Pro Wide';
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+    .products{
+        width: 100%;
+        display: flex;
+        padding-left: 0.063rem;
+        gap: 1rem;
+        margin-top: 1rem;
+        overflow-x: scroll;
+    }
+}

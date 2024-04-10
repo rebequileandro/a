@@ -1,0 +1,15 @@
+@import '../../../sass/stylesImports.scss';
+.cashier-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__points-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__points {
+    width: 50%;
+    height: 14rem;
+    @include grey-gradient-bg;
+  }
+}

@@ -1,0 +1,13 @@
+.profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__badges {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 1rem;
+  }
+}

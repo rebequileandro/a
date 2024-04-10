@@ -1,0 +1,46 @@
+.cashier-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+    .header-cashier{
+        margin-top: 2.4rem;
+        width: 85%;
+
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h1{
+                font-family: 'Acumin Pro Wide';
+                text-transform: none;
+            }
+        }
+        P{
+            margin-top: 1rem;
+            text-transform: capitalize;
+        }
+    }
+    .ticket-cashier-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .open-qr-scanner{
+        position: fixed;
+        top: 83%;
+        width: 5rem;
+        height: 5rem;
+        background: var(--gradient-primary-left-to-right);
+        border-radius: 0.62rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 4 ;
+    }
+}

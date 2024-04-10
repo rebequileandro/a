@@ -1,0 +1,29 @@
+.section-five {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background-color: white;
+  &__content {
+    display: flex;
+  }
+  &__title-container {
+    border: solid 1px black;
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 6rem;
+    transform: rotate(-90deg);
+    color: black;
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}

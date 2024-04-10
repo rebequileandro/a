@@ -1,0 +1,16 @@
+@import './index.scss';
+
+.App{
+    aspect-ratio: 960/540;
+    background-image: url('./assets/desktop1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+@media screen {
+    .App{
+        background-image: url('./assets/phone.svg');
+    }
+}

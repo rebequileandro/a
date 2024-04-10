@@ -1,0 +1,6 @@
+.not-found {
+  @include absolute-center;
+  &__animation {
+    width: 90vw;
+  }
+}

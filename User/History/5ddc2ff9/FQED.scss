@@ -1,0 +1,6 @@
+@use "../../../../sass/stylesImports.scss" as styles;
+
+.login-form {
+  @include styles.flex(column, nowrap, start, center);
+  width: 100%;
+}

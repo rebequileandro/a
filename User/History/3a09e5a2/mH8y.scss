@@ -1,0 +1,11 @@
+//abstracts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/animations';
+//base
+@import './base/base';
+@import './base/resets';
+@import './base/typography';
+//components
+@import './components/gradinet_border';
+@import './components/btn';

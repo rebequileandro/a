@@ -1,0 +1,27 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 37.5em) {
+      //600-900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //900-1200px
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    //1200-1800px
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

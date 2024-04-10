@@ -1,0 +1,48 @@
+@import '../../../sass/stylesImports.scss';
+.cashier-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+  .header-cashier {
+    margin-top: 2.4rem;
+    width: 83%;
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        font-family: 'Acumin Pro Wide';
+        text-transform: none;
+      }
+    }
+    P {
+      margin-top: 1rem;
+      text-transform: capitalize;
+    }
+  }
+  .ticket-cashier-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+  }
+  .open-qr-scanner {
+    position: fixed;
+    top: 83%;
+    width: 8rem;
+    height: 8rem;
+    @include primary-gradient-light-bg;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+}

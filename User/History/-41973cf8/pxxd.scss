@@ -1,0 +1,12 @@
+.search-bar {
+  //   border: solid 1px white;
+  margin-top: 5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  &__btn {
+    width: 8rem;
+    font-size: 1.3rem;
+  }
+}

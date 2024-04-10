@@ -1,0 +1,29 @@
+@import "../../sass/stylesImports.scss";
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &__logo-wrapper {
+    width: 15rem;
+    height: 17rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    &--hidden {
+      opacity: 1;
+      animation: fadeout 2s 1 forwards;
+    }
+  }
+  &__xlr-conector {
+    position: absolute;
+    width: 30%;
+  }
+}

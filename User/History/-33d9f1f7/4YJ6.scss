@@ -1,0 +1,43 @@
+@import "../../sass/stylesImports.scss";
+
+.next-dates {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  &__cap {
+    position: absolute;
+    width: 20rem;
+    transform: rotate(-80deg);
+    bottom: -10rem;
+    left: -5rem;
+    z-index: -1;
+  }
+  &__sunglasses {
+    position: absolute;
+    top: -5rem;
+    right: -8rem;
+    width: 27rem;
+  }
+  &__logo {
+    position: absolute;
+    width: 14rem;
+    top: 15%;
+    opacity: 0;
+    animation: fadein 1s 1 forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .next-dates {
+    &__logo {
+      top: 25%;
+    }
+  }
+}

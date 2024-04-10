@@ -1,0 +1,74 @@
+{
+  "name": "wedrink-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
+    "@mui/x-date-pickers": "^5.0.0-alpha.7",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.0.0",
+    "axios": "^0.27.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "chart.js": "^3.8.0",
+    "cra-append-sw": "^2.7.0",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.1",
+    "framer-motion": "^6.3.13",
+    "lottie-react": "^2.2.1",
+    "modern-react-qr-reader": "^1.0.12",
+    "process": "^0.11.10",
+    "qrcode.react": "^3.0.2",
+    "react": "^18.1.0",
+    "react-app-rewired": "^2.2.1",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "^18.1.0",
+    "react-multi-date-picker": "^3.3.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-persist-indexeddb-storage": "^1.0.4",
+    "sass": "^1.51.0",
+    "socket.io-client": "^4.5.1",
+    "stream-browserify": "^3.0.0",
+    "swiper": "^8.2.4",
+    "util": "^0.12.4",
+    "web-push": "^3.5.0",
+    "web-vitals": "^2.1.4",
+    "workbox-core": "^6.5.3",
+    "workbox-expiration": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+@use "../../../../sass/stylesImports" as styles;
+
+.edit-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #00000051;
+  backdrop-filter: blur(5px);
+  @include styles.flex-config(flex, center, center, row, nowrap);
+
+  &__close-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  &__container {
+    width: 60%;
+    min-height: 70%;
+    background-color: #101010d1;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    @include styles.flex-config(flex, center, center, column, nowrap);
+    padding: 2rem;
+    position: relative;
+    animation: fadein-scale-1 1 0.4s forwards;
+  }
+  &__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.2rem;
+  }
+  &__buttons-wrapper {
+    width: 100%;
+    @include styles.flex-config(flex, center, center, row, nowrap);
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  &__delete-date {
+    align-self: flex-start;
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.665);
+  }
+}

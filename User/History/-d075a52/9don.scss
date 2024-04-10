@@ -1,0 +1,12 @@
+.desserts {
+  &__strawberry {
+    width: 15rem;
+    margin-bottom: 2rem;
+    transform: rotate(-20deg);
+  }
+  &__cake {
+    width: 20rem;
+    margin-top: 2rem;
+    transform: scaleX(-1);
+  }
+}

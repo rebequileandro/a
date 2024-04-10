@@ -1,0 +1,59 @@
+.tour-carousel {
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  transform: rotate(-5deg);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadein 1s 1 0.5s forwards;
+  position: relative;
+
+  .swiper-slide {
+    width: auto;
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  &__background-carousel-wrapper {
+    position: absolute;
+    // border: solid 1px aqua;
+  }
+  &__slider {
+    border: solid 1px aqua;
+    height: 90% !important;
+  }
+  &__slide {
+    overflow: visible !important;
+    flex-shrink: 0;
+    transition: 1s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 25rem !important;
+    border: solid 1px aqua;
+    height: 100% !important;
+    &--text {
+      font-family: Shadow;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4rem;
+    }
+  }
+}
+// @media (max-width: 600px) {
+//   .tour-carousel {
+//     &__item {
+//       &--image {
+//         width: 35rem;
+//       }
+//       &--btn {
+//         font-size: 2.5rem;
+//       }
+//       &--text {
+//         font-size: 3rem;
+//       }
+//     }
+//   }
+// }

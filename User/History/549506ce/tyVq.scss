@@ -1,0 +1,42 @@
+.overlay-type-of-drink{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.62rem);
+    background: linear-gradient(180deg, rgba(7, 1, 4, 0.66) 0%, rgba(70, 5, 56, 0.66) 100%);
+    z-index: 6;
+    .popup{
+        width: 95%;
+        top: 20%;
+        height: 21.3rem;
+        background: var(--gradient-secondary);
+        border-radius: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+         padding: 1rem;
+        transform: scale(0.6);
+        animation: popup 0.2s 1 forwards;
+        z-index: 3;
+        p{
+            margin-top: .5rem;
+           font-weight: 400;
+           font-size: 0.68rem;
+        }
+        .type-of-products{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap:.5rem;
+        }
+        .cancel{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+ 
+}

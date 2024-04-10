@@ -1,0 +1,195 @@
+{
+  "entradas": [
+    {
+      "name": "Papas fritas",
+      "price": 900
+    },
+    {
+      "name": "Papas rústicas",
+      "price": 600
+    },
+    {
+      "name": "provoleta",
+      "price": 700
+    },
+    {
+      "name": "provoleta especial",
+      "price": 800
+    },
+    {
+      "name": "Bastones de espinaca",
+      "price": 600
+    },
+    {
+      "name": "tequeños",
+      "price": 1000
+    }
+  ],
+  "classicPizza": [
+    {
+      "name": "Margarita",
+      "description": "Queso, tomate y albahaca.",
+      "price": 800
+    },
+    {
+      "name": "Pepperoni",
+      "description": "Queso, tomate y pepperoni.",
+      "price": 900
+    },
+    {
+      "name": "3 Queso",
+      "description": "Queso, brie y queso azul.",
+      "price": 900
+    },
+    {
+      "name": "fugazza especial",
+      "description": "Queso, cebolla y jamón.",
+      "price": 1000
+    },
+    {
+      "name": "Jamón y Bacon",
+      "description": "Queso, jamón y bacon.",
+      "price": 800
+    }
+  ],
+  "especialPizza": [
+    {
+      "name": "Súper",
+      "description": "Pollo, bacon, hongos y pimientos.",
+      "price": 800
+    },
+    {
+      "name": "Pepperoni especial",
+      "description": "Queso, pepperoni y Pimientos.",
+      "price": 800
+    },
+    {
+      "name": "Queso y Tomate",
+      "description": "Queso y tomate.",
+      "price": 800
+    },
+    {
+      "name": "Pollo",
+      "description": "Queso, tomate y Pollo.",
+      "price": 900
+    },
+    {
+      "name": "Jamón",
+      "description": "Queso, tomate y jamón.",
+      "price": 900
+    }
+  ],
+  "authorsPizza": [
+    {
+      "name": "La insuperable",
+      "description": "Pollo, bacon,  jamón, hongos y pimientos.",
+      "price": 800
+    },
+    {
+      "name": "La Argenta",
+      "description": "Mollejas, verdeo y queso.",
+      "price": 800
+    },
+    {
+      "name": "La Única",
+      "description": "Queso, tomate, champiñón y queso azul.",
+      "price": 800
+    },
+    {
+      "name": "Pollo extra",
+      "description": "Queso, pollo y salsa blanca.",
+      "price": 900
+    },
+    {
+      "name": "Jamón Crudo",
+      "description": "Queso, tomate y jamón crudo.",
+      "price": 900
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Flan casero",
+      "price": 400
+    },
+    {
+      "name": "Budín de pan",
+      "price": 400
+    },
+    {
+      "name": "Brownie con helado",
+      "price": 500
+    },
+    {
+      "name": "Volcán de Chocolate",
+      "price": 700
+    },
+    {
+      "name": "Ensalada de frutas",
+      "price": 600
+    },
+    {
+      "name": "Ensalada de frutas con helado",
+      "price": 700
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Gaseosas  0.5 l",
+      "price": 400
+    },
+    {
+      "name": "Gaseosas  1.5 l",
+      "price": 600
+    },
+    {
+      "name": "Limonada 0.3 l",
+      "price": 300
+    },
+    {
+      "name": "Limonada 1 l",
+      "price": 500
+    },
+    {
+      "name": "Cerveza industrial",
+      "price": 400
+    },
+    {
+      "name": "Cerveza artesanal",
+      "price": 600
+    },
+    {
+      "name": "Agua mineral 0.5 l",
+      "price": 300
+    }
+  ],
+  "coffee": [
+    {
+      "name": "Té/Mate",
+      "price": 200
+    },
+    {
+      "name": "Café Chico",
+      "price": 150
+    },
+    {
+      "name": "Café Grande",
+      "price": 200
+    },
+    {
+      "name": "Jarrita",
+      "price": 300
+    },
+    {
+      "name": "Lágrima",
+      "price": 200
+    },
+    {
+      "name": "Capuchino",
+      "price": 400
+    },
+    {
+      "name": "Submarino",
+      "price": 300
+    }
+  ]
+}

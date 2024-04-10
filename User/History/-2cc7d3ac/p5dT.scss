@@ -1,0 +1,14 @@
+@import '../../../sass/stylesImports.scss';
+.organizer-activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__no-activities {
+    // margin-top: 9vh;
+  }
+  &__description {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}

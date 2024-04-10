@@ -1,0 +1,20 @@
+.categories {
+  &__title-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 1.8rem;
+  }
+
+  &__see-more-btn {
+    background-color: transparent;
+    border: none;
+    color: $color-primary;
+    font-size: $heading-size-16;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

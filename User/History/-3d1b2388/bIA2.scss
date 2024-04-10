@@ -1,0 +1,31 @@
+@import "../../sass/stylesImports.scss";
+
+.text-area {
+  &__wrapper {
+    @include primary-gradient-dark-bg;
+    width: 100%;
+    height: 10rem;
+    padding: 0.1rem;
+    border-radius: 1.5rem;
+  }
+  &__wrapper.error {
+    background: red;
+  }
+  &__error {
+    color: red;
+    font-size: 1.2rem;
+  }
+  &__input-area {
+    border: none;
+    resize: none;
+    border-radius: 1.5rem;
+    background-color: #542a4a;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 1.5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}

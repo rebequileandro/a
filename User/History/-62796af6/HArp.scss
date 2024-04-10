@@ -1,0 +1,22 @@
+.container-details-categories{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+    transform: translateX(100%);
+    animation:  _transition 0.3s 1 forwards;
+
+    .container-drinks{
+        margin-top: 2rem;
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+        column-gap: 2.5rem;
+        justify-items: center;
+        
+    }
+}

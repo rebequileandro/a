@@ -1,0 +1,12 @@
+.drinks {
+  &__beer {
+    width: 12rem;
+    margin-bottom: 2rem;
+    transform: rotate(-20deg);
+  }
+  &__drink {
+    width: 20rem;
+    margin-top: 2rem;
+    transform: scaleX(-1);
+  }
+}

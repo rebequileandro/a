@@ -1,0 +1,9 @@
+.multiple-image{
+    display: flex;
+    max-width: 9rem;
+    gap: .4rem;
+    overflow-x: hidden;
+    &:hover{
+        overflow-x: scroll;
+    }
+}

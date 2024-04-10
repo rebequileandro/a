@@ -1,0 +1,21 @@
+.entree {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &__cob {
+    width: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__cheese {
+    width: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,11 @@
+/*STRUCTURE
+<div className="anchor-primary">
+    <a href="/prueba/vermas">Ver más</a>
+</div>
+*/
+
+.anchor-primary {
+  cursor: pointer;
+  @include primary-gradient-txt;
+  display: inline-block;
+}

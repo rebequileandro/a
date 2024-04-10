@@ -1,0 +1,36 @@
+@import '../../../../sass/stylesImports.scss';
+
+.checkout-select {
+  width: 100%;
+  margin-top: 3rem;
+  @include flex-config(flex, column, nowrap, center, center);
+
+  .payment-method-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .change {
+    margin-bottom: -0.8rem;
+  }
+
+  .current-method {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 2.1rem;
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .icon-method {
+    width: 3rem;
+  }
+
+  .gradient-border {
+    width: 100%;
+  }
+}

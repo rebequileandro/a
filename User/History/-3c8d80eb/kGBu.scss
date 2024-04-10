@@ -1,0 +1,42 @@
+@import '../../../sass/stylesImports.scss';
+
+.categories-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1.5rem;
+  .see-more {
+    margin-bottom: -0.5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.products-container {
+  display: flex;
+  width: 94vw;
+  overflow-x: scroll;
+  margin-bottom: 3.5rem;
+  div.product-card-container:not(:first-child) {
+    margin-left: 1rem;
+  }
+  div.product-card-container:last-child {
+    margin-right: 2rem;
+  }
+  div.small-product-card:not(:first-child) {
+    margin-left: 1rem;
+  }
+  div.small-product-card:last-child {
+    margin-right: 2rem;
+  }
+  .products {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}

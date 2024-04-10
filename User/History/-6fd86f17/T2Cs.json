@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "65150eba7856889ebwef6s07dc66",
+    "city": "Miami",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-02-22T00:00:00.000Z",
+    "show": "LIV",
+    "availability": true,
+    "link": "",
+    "__v": 0
+  },
+  {
+    "_id": "65150eba7856889eb6s07dc66",
+    "city": "CALIFORNIA",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-04-12T00:00:00.000Z",
+    "show": "Coachella",
+    "availability": true,
+    "link": "",
+    "__v": 0
+  },
+  {
+    "_id": "65150eba7856889eb6s07dc66",
+    "city": "CALIFORNIA",
+    "country": "USA",
+    "flag": "🇺🇸",
+    "date": "2024-04-19T00:00:00.000Z",
+    "show": "Coachella",
+    "availability": true,
+    "link": "",
+    "__v": 0
+  }
+]

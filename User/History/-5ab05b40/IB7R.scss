@@ -1,0 +1,15 @@
+@import '../../../sass/stylesImports.scss';
+.loader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__loader {
+    animation: rotate 0.7s infinite linear;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

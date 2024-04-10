@@ -1,0 +1,139 @@
+@use "@/styles/stylesImports.scss" as styles;
+.card-modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding: 1.5rem;
+  padding-top: 7rem;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.192);
+  backdrop-filter: blur(1rem);
+  transition: backdrop-filter 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+  &--show {
+    display: flex;
+  }
+  &--hide {
+    display: flex;
+
+    backdrop-filter: blur(0);
+    background-color: rgba(0, 0, 0, 0);
+    animation: hideDisplay 1 0.1s forwards;
+    animation-delay: 0.4s;
+  }
+  &__close {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.card-modal {
+  width: 100%;
+  background: linear-gradient(
+    135.15deg,
+    rgba(0, 0, 0, 0.61) 3.25%,
+    rgba(41, 2, 64, 0.8) 96.48%
+  );
+  //   backdrop-filter: blur(1rem);
+  border-radius: 2rem;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 7rem 2.3rem;
+  gap: 3rem;
+  clip-path: inset(50% 0 50% 0 round 2rem 2rem 2rem 2rem);
+
+  &--show {
+    animation: showModal 1 0.4s ease-in-out forwards;
+  }
+  &--hide {
+    clip-path: inset(0 0 0 0 round 2rem 2rem 2rem 2rem);
+    animation: hideModal 1 0.3s ease-in-out forwards;
+  }
+
+  &__mdcx {
+    flex-shrink: 0;
+  }
+  &__button {
+    background-color: styles.$color-primary;
+    border-radius: 9rem;
+    border: none;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.4rem;
+    padding-left: 2rem;
+    font-weight: 600;
+
+    //disabled
+    opacity: 0.5;
+  }
+  &__author {
+    background-color: #fff;
+    width: 100%;
+    height: 6.6rem;
+    border-radius: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  &__author-img-container {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 2px styles.$color-primary;
+    background-color: styles.$color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  &__author-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__author-info {
+    text-align: start;
+  }
+}
+@keyframes showModal {
+  to {
+    clip-path: inset(0 0 0 0 round 2rem 2rem 2rem 2rem);
+  }
+}
+@keyframes hideModal {
+  100% {
+    clip-path: inset(50% 0 50% 0 round 2rem 2rem 2rem 2rem);
+  }
+}
+@keyframes hideDisplay {
+  100% {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-modal-overlay {
+    padding-top: 5rem;
+    justify-content: center;
+  }
+  .card-modal {
+    width: 60%;
+    padding: 4rem 5rem;
+  }
+}

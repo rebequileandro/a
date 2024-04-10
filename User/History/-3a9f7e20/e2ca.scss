@@ -1,0 +1,15 @@
+.searchbar-container{
+    width: 73rem;
+    height: 4.4rem;
+    background: #282626CC;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .search{
+        width: 28.8rem;
+    }
+    .reporte{
+        width: 17.5rem;
+    }
+}

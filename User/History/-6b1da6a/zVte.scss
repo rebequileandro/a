@@ -1,0 +1,16 @@
+@import url('../../../../sass/stylesImports.scss');
+.personal-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin-top: 1.5rem;
+  }
+  &__form {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  &__cancel {
+    @include primary-gradient-dark-txt;
+  }
+}

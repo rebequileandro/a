@@ -1,0 +1,17 @@
+@use "../../sass/stylesImports" as styles;
+
+.login {
+  height: 100%;
+
+  &__title {
+    font-family: "Shadow";
+    margin-bottom: 3rem;
+    font-weight: 400;
+  }
+  &__form {
+    @include styles.flex-config(flex, center, center, column, nowrap);
+    gap: 2rem;
+    width: 25%;
+    text-align: center;
+  }
+}

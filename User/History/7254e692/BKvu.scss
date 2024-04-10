@@ -1,0 +1,188 @@
+.card-polaroid {
+  display: inline-block;
+  position: relative;
+  transition: all 0.1s;
+  &--even {
+    transform: translateY(3rem);
+  }
+  &__background {
+    width: 100%;
+  }
+  &__btn {
+    border: solid 1px aqua;
+    position: absolute;
+    width: 100%;
+    height: 3.5rem;
+    left: 0;
+    bottom: 0.2rem;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: #25648d;
+    font-family: Changeling;
+    letter-spacing: 0.06rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--dt {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--text {
+      position: absolute;
+    }
+    &--bg {
+      display: none;
+      width: 100%;
+    }
+  }
+  &__papper-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 14%;
+    z-index: 1;
+  }
+  &__location-wrapper {
+    position: relative;
+    width: 100%;
+    // border: solid 1px rgb(0, 162, 255);
+  }
+  &__location-container {
+    // border: solid 1px orange;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 1.2rem;
+    // padding-top: 2.2rem;
+    font-family: Tauri, sans-serif;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // span {
+    //   // border: solid 1px orange;
+    // }
+  }
+  &__papper {
+    width: 100%;
+    filter: drop-shadow(0px 2px 3px #00000079);
+    &--1 {
+      display: none;
+    }
+  }
+  &__date-container {
+    position: absolute;
+    background-color: #25648d;
+    top: 10%;
+    padding: 0.3rem 0.6rem;
+    font-family: Amplitude;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}
+.card-polaroid:hover {
+  transform: translateX(-0.8rem) scale(1.1);
+  filter: drop-shadow(0px 2px 3px #000000de);
+  z-index: 3;
+
+  .card-polaroid {
+    &__btn {
+      color: #ffffff;
+      background-image: url("../../../../../assets/LiveTour/papper-1.webp");
+      display: block;
+      // background-position-y: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      // transition: all 0.2s;
+      &:hover {
+        animation: brounce-1 0.5s 1 both;
+      }
+      &--text {
+        animation: brounce 0.5s 1 both;
+      }
+      &--bg {
+        // display: inline-block;
+      }
+    }
+    &__location-container {
+      animation: brounce 0.5s 1 both;
+      color: black;
+    }
+    &__papper {
+      animation: brounce 0.5s 1 both;
+      &--1 {
+        display: inline-block;
+      }
+      &--2 {
+        display: none;
+      }
+    }
+    &__date-container {
+      animation: brounce 0.5s 1 both;
+    }
+  }
+}
+.card-polaroid--even:hover {
+  transform: translateY(3rem) translateX(0.8rem) scale(1.1);
+  filter: drop-shadow(0px 2px 3px #000000de);
+  z-index: 3;
+  // margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  .card-polaroid {
+    &__btn {
+      bottom: 0;
+      // border: solid 1px orange;
+      height: 5rem;
+    }
+    &__location-container {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@keyframes brounce {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes brounce-1 {
+  from,
+  to {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

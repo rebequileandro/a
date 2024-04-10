@@ -1,0 +1,45 @@
+@use '../../../../sass/stylesImports.scss' as styles;
+.edit-food {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include styles.app-gradient-dark-bg;
+  z-index: 33;
+  animation: fadein 0.3s 1 forwards;
+  padding: 2rem;
+  &__cancel {
+    font-size: styles.$text-size-14;
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+    @include styles.primary-gradient-dark-txt;
+    display: inline-block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 15%;
+      width: 100%;
+      height: 0.1rem;
+      @include styles.primary-gradient-dark-bg;
+    }
+  }
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  &__final-price-wrapper {
+    margin: 1rem 0rem;
+    &__label {
+      font-size: styles.$text-size-14;
+    }
+  }
+}

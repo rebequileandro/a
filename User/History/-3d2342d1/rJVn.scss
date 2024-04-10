@@ -1,0 +1,24 @@
+.cashier-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .header-cashier{
+        margin-top: 2.4rem;
+        width: 85%;
+
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h1{
+                font-family: 'Acumin Pro Wide';
+    
+                text-transform: none;
+            }
+        }
+    }
+}

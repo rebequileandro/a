@@ -1,0 +1,45 @@
+.section-two {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  &__pizza-top {
+    width: 25rem;
+    margin-left: -10rem;
+    margin-bottom: 2rem;
+  }
+  &__pizza-bottom {
+    width: 40rem;
+    margin-right: -10rem;
+    margin-top: 2rem;
+  }
+  &__data {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  br {
+    background-color: black;
+    border: none;
+    height: 2px;
+  }
+}

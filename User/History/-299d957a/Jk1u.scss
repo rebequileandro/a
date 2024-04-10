@@ -1,0 +1,54 @@
+@import "../../global/css/mixins.scss";
+
+.footer-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #040404;
+  position: relative;
+  @include flexible(flex, column, nowrap, center, center);
+
+  .footer-info {
+    width: 70%;
+    min-height: 16rem;
+    // height: 50%;
+    position: absolute;
+    z-index: 1;
+    @include flexible(flex, column, nowrap, space-between, center);
+    @include responsive(1400px) {
+      width: 80%;
+    }
+
+    @include responsive(992px) {
+      width: 90%;
+      justify-content: space-around;
+    }
+    &__title {
+      font-family: "Monument Extended";
+      font-weight: 700;
+      font-size: 2.6rem;
+      text-align: center;
+      @include responsive(992px) {
+        font-size: 2rem;
+      }
+    }
+    &__description {
+      font-family: "Acumin Pro Wide";
+      font-size: 1.4rem;
+      text-align: center;
+
+      @include responsive(1200px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .shapes {
+    @include flexible(flex, row, nowrap, center, center);
+    width: 30%;
+    .egg1 {
+      width: 70%;
+    }
+    @include responsive(1400px) {
+      width: 70%;
+    }
+  }
+}

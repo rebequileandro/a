@@ -1,0 +1,6 @@
+.home{
+    background-color: $TERTIARY-COLOR;
+    @include limits(10em, 10em);
+    align-self: center;
+    
+}

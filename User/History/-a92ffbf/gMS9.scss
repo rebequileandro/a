@@ -1,0 +1,8 @@
+.anchor-primary {
+  cursor: pointer;
+  @include primary-gradient-txt;
+  display: inline-block;
+  &:hover {
+    text-shadow: 0px 0px 10px #ffff;
+  }
+}

@@ -1,0 +1,19 @@
+.classic-pizza {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  &__pizza-top {
+    width: 25rem;
+    margin-right: -10rem;
+    margin-bottom: 2rem;
+  }
+  &__pizza-bottom {
+    width: 40rem;
+    margin-left: -10rem;
+    margin-top: 2rem;
+  }
+}

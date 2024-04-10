@@ -1,0 +1,27 @@
+.new-password-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .gradient-box{
+        height: 20rem;
+        width: 90%;
+        border-radius: 1.25rem;
+        background: var(--gradient-secondary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .btn{
+        width: 60%;
+    }
+    .input-container{
+        width: 80%;
+    }
+}

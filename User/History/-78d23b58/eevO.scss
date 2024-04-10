@@ -1,0 +1,16 @@
+//abstracts
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/mixins";
+
+//base
+@import "./scss/base/base";
+@import "./scss/base/resets";
+
+//components
+@import "./scss/components/nav";
+
+//pages
+@import "./scss/pages/landing";
+@import "./scss/pages/main";
+@import "./scss/pages/home";
+@import "./scss/pages/about_me";

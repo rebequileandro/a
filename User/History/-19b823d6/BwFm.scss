@@ -1,0 +1,19 @@
+.loader {
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid rgba(238, 238, 238, 0.788);
+    border-top: 0.2rem solid var(--gradient-primary-left-to-right);
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

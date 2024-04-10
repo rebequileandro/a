@@ -1,0 +1,29 @@
+.footer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__title-container {
+    height: 60rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+  }
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 6rem;
+    transform: rotate(-90deg);
+    color: black;
+    white-space: nowrap;
+  }
+  &__heart {
+    width: 30rem;
+  }
+  &__line {
+    width: 60%;
+    margin-top: 1.5rem;
+  }
+}

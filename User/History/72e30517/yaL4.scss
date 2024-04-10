@@ -1,0 +1,13 @@
+.home {
+  width: 100%;
+  // height: calc(100% - 3rem);
+  // height: 100%;
+  padding: 3rem 0;
+
+  // padding-bottom: 3rem;
+
+  &__spacer {
+    height: 3rem;
+    width: 100%;
+  }
+}

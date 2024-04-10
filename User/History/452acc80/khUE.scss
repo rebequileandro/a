@@ -1,0 +1,16 @@
+.not-found {
+  @include limits(90vw, 90vh);
+  @include absolute-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__animation {
+    width: 75vw;
+  }
+  &__text {
+    @include gradien-text;
+    top: 5%;
+    font-size: 10rem;
+  }
+}

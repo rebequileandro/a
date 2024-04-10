@@ -1,0 +1,22 @@
+@use "../../../../sass/stylesImports.scss" as styles;
+
+.chat-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 2rem;
+  @include styles.flex(column, nowrap, start, center);
+
+  &__empty {
+    text-align: center;
+    font-size: styles.$text-size-16;
+    opacity: 0.5;
+  }
+  &__load-more {
+    width: 100%;
+    padding: 1rem 0rem;
+    margin-bottom: 1rem;
+    color: styles.$color-primary;
+  }
+}

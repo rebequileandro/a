@@ -1,0 +1,66 @@
+.navbar {
+  @include center;
+  @include limits(4em, 18em);
+  flex-direction: column;
+  position: fixed;
+  background-color: $TRANSPARENT-COLOR;
+  backdrop-filter: blur(1em);
+  border-radius: 5em;
+  top: 50%;
+  left: 1em;
+  padding: 0 0.8rem;
+  gap: 1.5em;
+  transform: translateY(-50%) translateX(-100px);
+  animation: nav-in 1s ease 1 0.4s forwards;
+
+  a {
+    color: $CUATERNARY-COLOR;
+    border-radius: 50%;
+    @include center;
+  }
+  &__static-icon {
+    width: 90%;
+  }
+}
+.icon-nav {
+  font-size: 3em;
+  padding: 0.2em;
+}
+
+@keyframes nav-in {
+  to {
+    transform: translateY(-50%) translateX(0);
+  }
+}
+@keyframes nav-icon {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.2);
+    color: rgb(140, 255, 255);
+    border: solid rgb(140, 255, 255) 2px;
+  }
+}
+
+@media (max-width: $BREAKPOINT-TABLET) {
+  .navbar {
+    flex-direction: row;
+    @include limits(18em, 4em);
+    left: 50%;
+    top: auto;
+    bottom: 1rem;
+    padding: 0 0.8rem;
+    transform: translateX(-50%) translateY(100px);
+    animation: nav-bottom 1s ease forwards;
+  }
+
+  @keyframes nav-bottom {
+    to {
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../sass/stylesImports.scss';
+.organizer-activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__no-activities {
+    margin-top: 40%;
+  }
+}

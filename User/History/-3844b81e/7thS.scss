@@ -1,0 +1,10 @@
+.card-slider {
+  width: 100%;
+  border: solid 1px aqua;
+
+  //   margin-left: -2rem;
+  margin-right: -2rem;
+  &__slide {
+    width: 14.2rem;
+  }
+}

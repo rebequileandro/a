@@ -1,0 +1,143 @@
+.checkout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .checkout-header{
+        width: 19.375rem;
+         h1{
+            font-family: "Acumin Pro Wide", sans-serif;
+            text-transform: none;
+            margin-top: 1rem;
+        }
+        .party{
+            font-family: 'Acumin Pro Wide';
+            font-style: normal;
+            text-transform: none;
+            font-weight: 500;
+            font-size: 1.25rem;
+            letter-spacing: 0.005em;
+            margin-top: 1rem;
+        }
+    }
+    .checkout-party{
+        margin-top: 2rem;
+        width: 19.375rem;
+        height: 6.75rem;
+        background: var(--gradient-secondary);
+        border-radius: 1rem;
+        padding: .5rem;
+
+        .logo{
+            width: 3.3rem;
+            border-radius: 50%;
+        }
+        
+        .party-container{
+            display: flex;
+            align-items: center;
+        }
+        .party{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-right: 6.7rem;
+            h2{
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: .87rem;
+            }
+            h1{
+                margin-top: .22rem;
+                font-size: 1rem;
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .payment-method{
+        width: 19.375rem;
+        margin-top: 3.5rem;
+        .payment-method-header{
+            display: flex;
+            align-items: center;
+            gap: 1rem
+        }
+        .change{
+            margin-bottom: -0.8rem;
+        }
+        h1{
+            font-family: 'Acumin Pro Wide';
+            font-style: normal;
+            text-transform: none;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.18rem;
+        }
+    }
+    .method{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .5rem;
+        margin-top: 2rem;
+        width: 19.375rem;
+        height: 3.18rem;
+        background: var(--gradient-secondary);
+        border-radius: 1rem;
+    }
+    .method-current{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        h2{
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 0.87rem;
+        }
+    }
+    .total-to-pay{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        img{
+            align-self: flex-start;
+        }
+    }
+    .total{
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        margin-left: 1rem;
+        gap: .5rem;
+        min-width: 5rem;
+        p{
+          font-size: 0.75rem;
+        }
+        .amount{
+            font-weight: 600;
+        }
+    }
+    .order{
+        margin-top: 2rem;
+        .order-details{
+            width: 19.375rem;
+            h3{
+                text-transform: capitalize;
+                font-size: .75rem;
+                
+            }
+        }
+    }
+    @keyframes popup-in {
+        to{
+            transform: scale(1);
+        }
+    }
+}
+         

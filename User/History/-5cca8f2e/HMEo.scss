@@ -1,0 +1,208 @@
+@import '../../../sass/stylesImports.scss';
+.ticket-container {
+  width: 90%;
+  min-height: 21rem;
+  @include grey-gradient-bg;
+  border-radius: 2rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .ticket-header {
+    margin-bottom: 4.5rem;
+
+    .profile {
+      position: absolute;
+      top: -4.5rem;
+      left: 3px;
+
+      .profile-image {
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #71666e;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .profile-image::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        padding: 4px;
+        @include primary-gradient-dark-bg;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+    }
+
+    .profile-name {
+      position: absolute;
+      top: 1.5rem;
+      left: 8.5rem;
+      text-transform: uppercase;
+      font-size: $heading-size-20;
+      font-weight: 600;
+      font-family: 'Acumin Pro Wide', sans-serif;
+      width: 50%;
+      overflow-wrap: break-word;
+    }
+    .ticket-id {
+      font-weight: 400;
+      font-size: $text-size-16;
+      font-family: 'Acumin Pro Wide', sans-serif;
+      position: absolute;
+      top: 1.7rem;
+      right: 2rem;
+    }
+  }
+  .ticket-order-container {
+    width: 100%;
+    margin-top: 10%;
+
+    .order-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+      width: 95%;
+      margin-right: auto;
+      .image-amount {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &__image-container {
+          width: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 5.4rem;
+            height: 5.9rem;
+          }
+        }
+      }
+
+      .image-packs {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 5.4rem;
+          height: 5.9rem;
+        }
+        img:last-child {
+          margin-left: -4rem;
+        }
+        img:not(:first-child, :last-child) {
+          margin-left: -4rem;
+        }
+      }
+
+      .amount {
+        width: 60%;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: $heading-size-24;
+        justify-content: center;
+      }
+      h2 {
+        font-family: 'Acumin Pro Wide', sans-serif;
+        font-weight: 600;
+        font-size: $text-size-16;
+        text-transform: capitalize;
+      }
+      p {
+        margin-top: 1rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        span {
+          font-weight: 600;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .grey-line {
+      height: 1.5px;
+      width: 90%;
+      margin: auto;
+      @include grey-gradient-bg;
+    }
+  }
+  .order-status-deliver {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+    width: 90%;
+    height: 5rem;
+    border-radius: 6.5rem;
+    color: white;
+    @include green-gradient-dark-bg;
+    box-shadow: 0px 0px 2rem rgba($glow-btn, 0.5);
+    text-transform: uppercase;
+    font-size: $text-size-16;
+    font-weight: 600;
+    // transition: 1s;
+    overflow: hidden;
+    position: relative;
+
+    .button__progress {
+      border-radius: 6.5rem 0rem 0rem 6.5rem;
+      background-color: #00000026;
+      transition: width 4s;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    span {
+      position: relative;
+    }
+  }
+
+  .order-status-delivered {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+    width: 90%;
+    height: 5rem;
+    border-radius: 6.5rem;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      #ffcc33 0.33%,
+      #ff3156 100%,
+      #ff3156 100%
+    );
+    box-shadow: 0px 0px 2rem rgba($glow-btn, 0.5);
+    text-transform: uppercase;
+    font-size: $text-size-16;
+    font-weight: 600;
+    // transition: 1s;
+  }
+  .total {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $heading-size-20;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1.5rem auto;
+  }
+}

@@ -1,0 +1,26 @@
+/*STRUCTURE
+<div className="anchor-primary">
+    <a href="/prueba/vermas">Ver más</a>
+</div>
+*/
+
+.anchor-primary {
+  a {
+    position: relative;
+    font-size: $text-size-16;
+    cursor: pointer;
+    @include primary-gradient-dark-txt;
+    display: inline-block;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    height: 0.1rem;
+    @include primary-gradient-dark-bg;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+}

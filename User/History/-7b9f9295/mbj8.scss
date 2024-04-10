@@ -1,0 +1,46 @@
+.menu-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  clip-path: circle(0% at calc(100% - 3.5rem) 3.5rem);
+  background: linear-gradient(
+    135.15deg,
+    rgba(0, 0, 0, 0.61) 3.25%,
+    rgba(41, 2, 64, 0.8) 96.48%
+  );
+
+  backdrop-filter: blur(1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: clip-path 0.5s ease-in-out;
+  z-index: 8;
+
+  &--open {
+    clip-path: circle(75% at calc(100% - 3.5rem) 3.5rem);
+  }
+  &__items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  &__item {
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__link {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+  }
+}

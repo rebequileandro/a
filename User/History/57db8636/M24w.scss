@@ -1,0 +1,11 @@
+@import '../../../sass/stylesImports.scss';
+.my-activities {
+  position: relative;
+  height: 50vh;
+  &__container-activities {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3.7rem 0;
+    gap: 1rem;
+  }
+}

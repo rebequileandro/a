@@ -1,0 +1,23 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("../../assets/landing.webp");
+  background-size: cover;
+  background-position: 80%;
+  text-align: center;
+  &__content {
+    margin-top: 18rem;
+    h1 {
+      font-weight: 400;
+      font-family: "Fredericka the Great";
+      font-size: 10rem;
+      margin-bottom: 1.5rem;
+    }
+    img {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.desserts {
+  &__strawberry {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  &__box-pizza {
+    width: 20rem;
+    margin-top: 2rem;
+    transform: scaleX(-1);
+  }
+}

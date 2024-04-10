@@ -1,0 +1,32 @@
+@import '../../../../sass/stylesImports.scss';
+
+.popoup-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(14, 13, 13, 0.7);
+  backdrop-filter: blur(1rem);
+  top: 0%;
+  left: 0%;
+  z-index: 9;
+
+  .popup-security-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 20rem;
+    @include grey-gradient-bg;
+    border-radius: $border-radius-primary;
+    z-index: 3;
+    padding: 3rem;
+    text-align: center;
+  }
+  .input-wrapper-bg {
+    background: #6f676c;
+  }
+}

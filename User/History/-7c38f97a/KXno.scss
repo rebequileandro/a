@@ -1,0 +1,54 @@
+.input-wrapper {
+  background: var(--color-primary);
+  padding: 2px;
+  border-radius: 25px;
+  height: 2.5rem;
+  width: 100%;
+  position: relative;
+  &__background {
+    background: #0f0919;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  &__prefix {
+    position: absolute;
+    top: 50%;
+    left: 0.7rem;
+    transform: translateY(-50%);
+  }
+  &__input {
+    font-family: "Acumin Pro Wide";
+    font-weight: 600;
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      243.94deg,
+      rgba(57, 57, 57, 0.5) -41.74%,
+      rgba(147, 147, 147, 0.5) -41.72%,
+      rgba(39, 39, 39, 0.5) 142.08%
+    );
+    color: white;
+    padding: 0 0.8rem;
+    font-size: 0.87rem;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-family: "Acumin Pro Wide";
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.596);
+    }
+  }
+  &__input.prefix {
+    padding-left: 2.2rem;
+  }
+}
+.input-wrapper.error {
+  background: red;
+}
+.wrapper {
+  width: 100%;
+}

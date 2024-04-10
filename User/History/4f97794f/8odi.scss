@@ -1,0 +1,27 @@
+.orders-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        margin-top: 4rem;
+        h1{
+            font-family: 'Acumin Pro Wide';
+            font-weight: 700;
+            font-size: 1.12rem;
+        }
+    }
+    .input-wrapper{
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gradient-primary);
+        border-radius: 1.25rem;
+        padding: 1px;
+        input{
+            width: 100%;
+            border: none;
+            border-radius: 1.25rem;
+        }
+    }
+}

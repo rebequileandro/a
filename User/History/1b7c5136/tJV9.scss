@@ -1,0 +1,25 @@
+.light-cyan {
+  position: absolute;
+  right: 0%;
+  bottom: -60%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 25rem 9rem #24b8d3;
+  animation: breathing 6s infinite;
+}
+.light-blue {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 25rem 10rem #2470d3;
+  animation: breathing 6s infinite;
+  &--end {
+    right: 0;
+  }
+  &--center {
+    right: 0;
+    left: 0;
+  }
+}
