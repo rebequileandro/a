@@ -1,9 +1,0 @@
-@use "../../sass/stylesImports" as styles;
-
-.bzrp-tour {
-  min-width: 100vw;
-  overflow-x: hidden;
-  // padding: 5rem;
-  border: solid 1px aqua;
-  @include styles.flex-config(flex, center, center, column, nowrap);
-}

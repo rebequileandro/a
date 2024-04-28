@@ -1,9 +1,0 @@
-{
-  "target": "ES6",
-  "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ES2016.Array.Include"],
-  "jsx": "react",
-  "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
-}

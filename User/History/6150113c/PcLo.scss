@@ -1,5 +1,0 @@
-@import url('../../global/css/mixins.scss');
-.wedrink-work-container{
-    width: 100%;
-    @include flexible(flex, row, nowrap, center, center)
-}

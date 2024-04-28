@@ -1,3 +1,0 @@
-const TABLE_STAGES = {
-
-}

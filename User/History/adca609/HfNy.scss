@@ -1,5 +1,0 @@
-@use "../../sass/stylesImports.scss" as styles;
-.nav {
-  @include styles.flex(row, nowrap, center, center);
-  gap: 1rem;
-}

@@ -1,9 +1,0 @@
-@import "../../global/css/mixins.scss";
-
-.star-now {
-  width: 16.5rem;
-  letter-spacing: 0.5px;
-  @include responsive(992px) {
-    width: 100%;
-  }
-}

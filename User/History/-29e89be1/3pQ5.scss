@@ -1,8 +1,0 @@
-.landing {
-  @include limits(100vw, 100vh);
-  @include absolute-center;
-  animation: landing 1s ease 1 2.5s forwards;
-  &__icon {
-    animation: fade-out 3s 1 4s forwards;
-  }
-}

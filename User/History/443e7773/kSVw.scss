@@ -1,7 +1,0 @@
-@use "../../sass/stylesImports.scss" as styles;
-
-.login {
-  width: 100vw;
-  height: 100vh;
-  @include styles.flex(column, nowrap, start, center);
-}
